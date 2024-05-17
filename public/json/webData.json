@@ -431,6 +431,13 @@
       "ico": "https://buuoj.cn/themes/buu_core/static/img/favicon.ico",
       "url": "https://buuoj.cn/",
       "description": "ctf我不会"
+    },
+    {
+      "id": 2,
+      "name": "WgpSec CTF",
+      "ico": "https://ctf.wgpsec.org/files/4aecfc78e9fe458cbd934aacc69ffd94/favicon.ico",
+      "url": "https://ctf.wgpsec.org/",
+      "description": "打CTF怎么能没有电竞椅呢!"
     }
   ],
   "other": [

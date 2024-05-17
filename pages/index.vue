@@ -133,7 +133,7 @@ const data6: Ref<webDataArr> = ref([])
 const data7: Ref<webDataArr> = ref([])
 // ui框架
 const data8: Ref<webDataArr> = ref([])
-fetch("http://localhost:3000/webData.json").then(res => res.json()).then(res => {
+fetch("/json/webData.json").then(res => res.json()).then(res => {
   // 关于前端
   data1.value = res.aboutFrontEnd
   for(let item of data1.value){
@@ -210,15 +210,6 @@ fetch("http://localhost:3000/webData.json").then(res => res.json()).then(res => 
 </script>
 
 <style scoped>
-.app {
-  width: 100%;
-  min-height: 100vh;
-  background-color: #f3f3f3;
-  display: flex;
-  flex-direction: column;
-  font-size: 14px;
-}
-
 .main {
   width: 100%;
   flex: 1;
@@ -283,7 +274,7 @@ fetch("http://localhost:3000/webData.json").then(res => res.json()).then(res => 
   border-radius: 5px;
   position: relative;
   transition: all 200ms;
-  font-size: 14px;
+  font-size: 16px;
   text-decoration: none;
 }
 .main_item span{
@@ -325,5 +316,13 @@ fetch("http://localhost:3000/webData.json").then(res => res.json()).then(res => 
 * {
   margin: 0;
   padding: 0;
+}
+.app {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
 }
 </style>

@@ -1,11 +1,21 @@
 <script setup lang="ts">
+function changePage1(){
+  location.href = '/'
+}
+function changePage2(){
+  location.href = '/h5Games'
+}
+function changePage3(){
+  location.href = '/github'
+}
 
 </script>
 
 <template>
   <header>
-    <div>网站分享</div>
-    <div>h5小游戏</div>
+    <div @click="changePage1()">网站分享</div>
+    <div @click="changePage2()">h5小游戏</div>
+    <div @click="changePage3()">github爆火项目</div>
     <div>项目</div>
   </header>
 </template>
@@ -19,6 +29,7 @@ header {
   justify-content: center;
   gap: 20px;
   background-color: white;
+  margin-bottom: 20px;
 }
 
 header div {
