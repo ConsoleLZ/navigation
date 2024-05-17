@@ -3,7 +3,7 @@ import {type Ref, ref} from "vue"
 import {type GithubArr} from "~/types/github";
 
 let data:Ref<GithubArr> = ref([])
-fetch("/navigation/dist/json/github.json").then(res=>res.json()).then(res=>{
+fetch("/json/github.json").then(res=>res.json()).then(res=>{
    data.value = res
 })
 

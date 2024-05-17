@@ -3,7 +3,7 @@ export default defineNuxtConfig({
     devtools: {enabled: false},
     app: {
         head: {
-            link: [{rel: 'stylesheet', href: '/navigation/dist/css/index.css'},{rel: 'stylesheet', href: ''}],
+            link: [{rel: 'stylesheet', href: '/css/index.css'},{rel: 'stylesheet', href: ''}],
         }
     },
 })
