@@ -133,7 +133,7 @@ const data6: Ref<webDataArr> = ref([])
 const data7: Ref<webDataArr> = ref([])
 // ui框架
 const data8: Ref<webDataArr> = ref([])
-fetch("/json/webData.json").then(res => res.json()).then(res => {
+fetch("/navigation/dist/json/webData.json").then(res => res.json()).then(res => {
   // 关于前端
   data1.value = res.aboutFrontEnd
   for(let item of data1.value){

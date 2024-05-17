@@ -3,7 +3,7 @@ import {type Ref, ref} from "vue"
 import {type H5GamesArr} from "~/types/h5Games";
 
 const data: Ref<H5GamesArr> = ref([])
-fetch("/json/h5Games.json").then(res=>res.json()).then(res=>{
+fetch("/navigation/dist/json/h5Games.json").then(res=>res.json()).then(res=>{
   data.value = res
 })
 

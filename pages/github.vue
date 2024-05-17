@@ -3,7 +3,7 @@ import {type Ref, ref} from "vue"
 import {type GithubArr} from "~/types/github";
 
 let data:Ref<GithubArr> = ref([])
-fetch("/json/github.json").then(res=>res.json()).then(res=>{
+fetch("/navigation/dist/json/github.json").then(res=>res.json()).then(res=>{
    data.value = res
 })
 
@@ -13,7 +13,7 @@ fetch("/json/github.json").then(res=>res.json()).then(res=>{
   <div class="app">
     <Header></Header>
     <div class="main_item" v-for="item in data" :key="item.id">
-      <a class="title" href="https://github.com/lucaong/minisearch">{{item.name}}</a>
+      <a class="title" :href="item.url" target="_blank">{{item.name}}</a>
       <p class="description">{{item.description}}</p>
       <div class="bottom">
         <div class="language">

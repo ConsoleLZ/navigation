@@ -5,7 +5,88 @@
     "url": "https://github.com/lucaong/minisearch",
     "description": "小巧而强大的 JavaScript 全文搜索引擎，适用于浏览器和 Node",
     "language": "JavaScript",
-    "star": 4130,
-    "fork": 125
+    "star": "4130",
+    "fork": "125"
+  },
+  {
+    "id": 2,
+    "name": "shikijs / shiki",
+    "url": "https://github.com/shikijs/shiki",
+    "description": "美观而强大的语法荧光笔(代码高亮)",
+    "language": "TypeScript",
+    "star": "8833",
+    "fork": "313"
+  },
+  {
+    "id": 3,
+    "name": "Codennnn / vue-color-avatar",
+    "url": "https://github.com/Codennnn/vue-color-avatar",
+    "description": "一个在线头像生成器只是为了好玩 |一个纯前端实现的头像生成网站",
+    "language": "Vue",
+    "star": "3187",
+    "fork": "413"
+  },
+  {
+    "id": 4,
+    "name": "baidu / amis",
+    "url": "https://github.com/baidu/amis",
+    "description": "前端低代码框架，通过 JSON 配置就能生成各种页面。",
+    "language": "TypeScript",
+    "star": "16,242",
+    "fork": "2,358"
+  },
+  {
+    "id": 5,
+    "name": "un-pany / v3-admin-vite",
+    "url": "https://github.com/un-pany/v3-admin-vite",
+    "description": "☀ A vue3 admin template | vue3 admin/element plus admin/vite admin/vue3 template/vue3 后台/vue3 模板/vue3 后台管理系统",
+    "language": "Vue",
+    "star": "4,136",
+    "fork": "725"
+  },
+  {
+    "id": 6,
+    "name": "chokcoco / iCSS",
+    "url": "https://github.com/chokcoco/iCSS",
+    "description": "不止于 CSS",
+    "language": "css",
+    "star": "19,006",
+    "fork": "1947"
+  },
+  {
+    "id": 7,
+    "name": "Vanessa219 / vditor",
+    "url": "https://github.com/Vanessa219/vditor",
+    "description": "♏ 一款浏览器端的 Markdown 编辑器，支持所见即所得（富文本）、即时渲染（类似 Typora）和分屏预览模式。An In-browser Markdown editor, support WYSIWYG (Rich Text), Instant Rendering (Typora-like) and Split View modes.",
+    "language": "TypeScript",
+    "star": "7,834",
+    "fork": "814"
+  },
+  {
+    "id": 8,
+    "name": "idurar / idurar-erp-crm",
+    "url": "https://github.com/idurar/idurar-erp-crm",
+    "description": "开源无头ERP CRM电子商务会计软件",
+    "language": "JavaScript",
+    "star": "5,561",
+    "fork": "1,593"
+  },
+  {
+    "id": 9,
+    "name": "freeCodeCamp / freeCodeCamp",
+    "url": "https://github.com/freeCodeCamp/freeCodeCamp",
+    "description": "freeCodeCamp.org 的开源代码库和课程。免费学习编码。",
+    "language": "TypeScript",
+    "star": "390,135",
+    "fork": "35,716"
+  },
+  {
+    "id": 10,
+    "name": "GrowingGit / GitHub-Chinese-Top-Charts",
+    "url": "https://github.com/GrowingGit/GitHub-Chinese-Top-Charts",
+    "description": "GitHub中文排行榜，各语言分设「软件 | 资料」榜单，精准定位中文好项目。各取所需，高效学习。",
+    "language": "java",
+    "star": "90,118",
+    "fork": "12,185"
   }
 ]
