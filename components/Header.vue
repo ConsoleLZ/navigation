@@ -9,6 +9,9 @@ function changePage3(){
   location.href = '/github'
 }
 
+function changePage4(){
+  location.href = '/project'
+}
 </script>
 
 <template>
@@ -16,7 +19,7 @@ function changePage3(){
     <div @click="changePage1()">网站分享</div>
     <div @click="changePage2()">h5小游戏</div>
     <div @click="changePage3()">github爆火项目</div>
-    <div>我的项目</div>
+    <div @click="changePage4()">我的项目</div>
   </header>
 </template>
 

@@ -1,5 +1,5 @@
 interface H5Games{
-    id:string
+    id:number
     name:string
     url:string
     img:string

@@ -1,5 +1,5 @@
 interface webData{
-    id:string
+    id:number
     name:string
     ico:string
     url:string
