@@ -317,12 +317,4 @@ fetch("/json/webData.json").then(res => res.json()).then(res => {
   margin: 0;
   padding: 0;
 }
-.app {
-  width: 100%;
-  min-height: 100vh;
-  background-color: #f3f3f3;
-  display: flex;
-  flex-direction: column;
-  font-size: 14px;
-}
 </style>

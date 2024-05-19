@@ -6,4 +6,9 @@ export default defineNuxtConfig({
             link: [{rel: 'stylesheet', href: '/css/index.css'},{rel: 'stylesheet', href: ''}],
         }
     },
+    vite: {
+        build:{
+            emptyOutDir:false
+        }
+    }
 })
