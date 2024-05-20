@@ -243,7 +243,7 @@ fetch("/json/webData.json").then(res => res.json()).then(res => {
 }
 
 .sidebar_right {
-  flex: 1;
+  width: 90%;
   height: 100%;
   padding-left: 120px;
   padding-top: 50px;
@@ -256,8 +256,21 @@ fetch("/json/webData.json").then(res => res.json()).then(res => {
   gap: 20px;
 }
 
+@media screen and (max-width: 550px) {
+  .sidebar{
+    display: none;
+  }
+  .sidebar_right{
+    padding-left: 0;
+    margin: 0 auto;
+  }
+  .main_item{
+    width: 40% !important;
+  }
+}
+
 .sidebar_right > div {
-  width: 90%;
+  width: 100%;
   background-color: white;
   border-radius: 4px;
   padding: 10px 40px;
@@ -309,6 +322,7 @@ fetch("/json/webData.json").then(res => res.json()).then(res => {
   border-radius: 8px;
   background-size: contain;
   background-position: center;
+  background-repeat: no-repeat;
 }
 </style>
 

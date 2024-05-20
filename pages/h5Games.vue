@@ -28,6 +28,26 @@ fetch("/json/h5Games.json").then(res=>res.json()).then(res=>{
   grid-gap: 15px;
   padding: 10px;
 }
+@media screen and (max-width: 800px) {
+  .main{
+    grid-template-columns: repeat(4,1fr);
+  }
+}
+@media screen and (max-width: 600px) {
+  .main{
+    grid-template-columns: repeat(3,1fr);
+  }
+}
+@media screen and (max-width: 500px) {
+  .main{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+@media screen and (max-width: 400px) {
+  .main{
+    grid-template-columns: repeat(1,1fr);
+  }
+}
 .game_item{
   width: 100%;
   height: 200px;

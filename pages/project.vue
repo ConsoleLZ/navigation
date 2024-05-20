@@ -108,8 +108,39 @@ fetch('/json/project.json').then(res=>res.json()).then(res=>{
 .bottom a{
   text-decoration: none;
   color: gray;
+  display: inline-block;
+  white-space: nowrap;
 }
 .bottom a:hover{
   color: #0047e1;
+}
+@media screen and (max-width: 550px) {
+  .main_item{
+    flex-direction: column;
+    height: 325px;
+    padding: 0;
+  }
+  .bg{
+    width: 100%;
+    flex: none;
+    height: 50%;
+    margin-right: 0;
+  }
+  .right{
+    width: 100%;
+  }
+  .lan{
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .bottom{
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .description{
+    -webkit-line-clamp: 4; /* 行数，值可以改，表示展示X行后多余的缩略展示 */
+  }
 }
 </style>
