@@ -188,6 +188,20 @@
       "ico": "https://nuxt.com.cn/icon.png",
       "url": "https://nuxt.com.cn/",
       "description": "创建高性能和生产级别的全栈Web应用和网站"
+    },
+    {
+      "id": 28,
+      "name": "vue",
+      "ico": "https://cn.vuejs.org/logo.svg",
+      "url": "https://cn.vuejs.org/",
+      "description": "易学易用，性能出色，适用场景丰富的 Web 前端框架."
+    },
+    {
+      "id": 29,
+      "name": "react",
+      "ico": "https://react.docschina.org/favicon.ico",
+      "url": "https://react.docschina.org/",
+      "description": "用于构建 Web 和原生交互界面的库"
     }
   ],
   "UIFramework": [
@@ -376,6 +390,13 @@
       "ico": "https://ezgif.com/favicon.ico",
       "url": "https://ezgif.com/",
       "description": "在线GIF制作器和图像编辑器"
+    },
+    {
+      "id": 15,
+      "name": "开发者客栈",
+      "ico": "https://static.developers.pub/8a71a71bc1ae403cbeb5b8e6230cb016.ico",
+      "url": "https://www.developers.pub/resume",
+      "description": "简历制作"
     }
   ],
   "AI": [
@@ -385,6 +406,13 @@
       "ico": "https://codegeex.cn/assets/images/only_logo_dark.png",
       "url": "https://codegeex.cn/",
       "description": "智能编程助手"
+    },
+    {
+      "id": 2,
+      "name": "OpenAI",
+      "ico": "https://openai.com/favicon.ico",
+      "url": "https://openai.com/",
+      "description": "拥有最强的chatGPT"
     }
   ],
   "cloudPlatform": [
@@ -436,6 +464,20 @@
       "ico": "https://gitee.com/favicon.ico",
       "url": "https://gitee.com/",
       "description": "DevOps一站式研发效能平台"
+    },
+    {
+      "id": 8,
+      "name": "路过图传",
+      "ico": "https://imgse.com/content/images/system/favicon_1587118523486_91617a.png",
+      "url": "https://imgse.com/",
+      "description": "免费图片上传"
+    },
+    {
+      "id": 9,
+      "name": "聚合图床",
+      "ico": "https://www.superbed.cn/favicon.ico",
+      "url": "https://www.superbed.cn/",
+      "description": "免费图片上传"
     }
   ],
   "networkSecurity": [
@@ -524,6 +566,13 @@
       "ico": "https://static-ddesign.oss-cn-beijing.aliyuncs.com/2024/01/10/c501f10f7dd4b2b3?OSSAccessKeyId=STS.NUDkViXJ8tpLZJDNXHQnazvBQ&Expires=1715786273&Signature=E4Oi7JjYrWiCJlMMddRoLkC5BmM%3D&response-content-disposition=attachment%3B%20filename%3D%221678341712313_47242a3527a615cb4fd8f42745d48fef.png%22&security-token=CAIS3QJ1q6Ft5B2yfSjIr5bxIOzdtZUZw7KnWGz1qlgdXeFNlbPpszz2IHhMdHdoBOgfsf8wmG1Q7Pgelqp6U4cdoPYY41QpvPpt6gqET9froq7ctM4A6vCMHWyUFGS0vqv7aPn4S9XwY%2Bqkb0u%2B%2BAZ43br9c0fFPTmiKobbppN7Sd4VUwKkF2gkYu1bPQx%2FssQXGGLMPPK2SH7Qj3HXEVBjt3gK6xd24r%2FtxdaHuFiMzg%2Fh1uYJpo%2B0LpSpdMhjOtA9ca%2FshbcpJ%2Fqbjn4LtkQarfkstsEep2eb5OP6KkJK%2FhCLP9DT9tBSNwJjbsA4YfUc9KiizaAg47OIyNiqk0wTYfs6XyjSX4Gvxtsu5H8tjWHTH1ySGQMusrjnXvGd22uv4ecJv6JVUJOnpivFg%2FiAnq0%2BhovmmTaEK07oIIPu25otuqEetH7z9rGRTDviLfjnl0hRVPAyB5dZZYhItQSJGoABjt6Pr2F7wcwrJXrvVdCtJqubR%2BKPZ5pcYv%2Bay8qR%2FTy%2BZIofJgjqjhaPxXXxJiSa8sneCw%2BEO7MIe3clS45HPYCuUV88%2FpkSDOfN9txJ0HrwGQwnb0qgxV%2BZ%2F9XPYEXsreYs9XZXwxbv90N4lerJJ2aJ4kug%2FMNKqjppmRb2sFsgAA%3D%3D",
       "url": "https://d.design/",
       "description": "多风格AI绘画神器免费生成；3D素材在线渲染，免费商用；各类创意设计大赛，等你来战！"
+    },
+    {
+      "id": 11,
+      "name": "EMOJIALL",
+      "ico": "",
+      "url": "https://www.emojiall.com/",
+      "description": "这里有关于Emoji、Emoji含义、Emoji图片等的所有信息。"
     }
   ]
 }
