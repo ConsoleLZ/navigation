@@ -57,25 +57,11 @@
       "description": "一个基于 JavaScript 的开源可视化图表库"
     },
     {
-      "id": 9,
-      "name": "webpack",
-      "ico": "https://www.webpackjs.com/icon_144x144.png",
-      "url": "https://www.webpackjs.com/",
-      "description": "静态模块打包工具"
-    },
-    {
       "id": 10,
       "name": "uiverse",
       "ico": "https://uiverse.io/favicon-32x32.png",
       "url": "https://uiverse.io/",
       "description": "适用于任何项目的开源 UI 元素"
-    },
-    {
-      "id": 11,
-      "name": "Mozilla",
-      "ico": "https://developer.mozilla.org/favicon-48x48.cbbd161b.png",
-      "url": "https://developer.mozilla.org/zh-CN/",
-      "description": "自 2005 年以来记录 Web 技术，包括 CSS、HTML 和 JavaScript"
     },
     {
       "id": 12,
@@ -127,13 +113,6 @@
       "description": "UI元素"
     },
     {
-      "id": 19,
-      "name": "Vite",
-      "ico": "https://cn.vitejs.dev/logo.svg",
-      "url": "https://cn.vitejs.dev/",
-      "description": "下一代的前端工具链"
-    },
-    {
       "id": 20,
       "name": "Variant Form",
       "ico": "http://vform666.cn/favicon.ico",
@@ -174,34 +153,64 @@
       "ico": "https://htmlrev.com/images/favicon.png",
       "url": "https://htmlrev.com/",
       "description": "网站模板"
-    },
+    }
+  ],
+  "documentation": [
     {
-      "id": 26,
-      "name": "vitepress",
-      "ico": "https://vitepress.dev/vitepress-logo-mini.svg",
-      "url": "https://vitepress.dev/",
-      "description": "Vite & Vue 驱动的静态站点生成器"
-    },
-    {
-      "id": 27,
-      "name": "nuxt",
-      "ico": "https://nuxt.com.cn/icon.png",
-      "url": "https://nuxt.com.cn/",
-      "description": "创建高性能和生产级别的全栈Web应用和网站"
-    },
-    {
-      "id": 28,
+      "id": 1,
       "name": "vue",
       "ico": "https://cn.vuejs.org/logo.svg",
       "url": "https://cn.vuejs.org/",
       "description": "易学易用，性能出色，适用场景丰富的 Web 前端框架."
     },
     {
-      "id": 29,
+      "id": 2,
       "name": "react",
       "ico": "https://react.docschina.org/favicon.ico",
       "url": "https://react.docschina.org/",
       "description": "用于构建 Web 和原生交互界面的库"
+    },
+    {
+      "id": 3,
+      "name": "vitepress",
+      "ico": "https://vitepress.dev/vitepress-logo-mini.svg",
+      "url": "https://vitepress.dev/",
+      "description": "Vite & Vue 驱动的静态站点生成器"
+    },
+    {
+      "id": 4,
+      "name": "nuxt",
+      "ico": "https://nuxt.com.cn/icon.png",
+      "url": "https://nuxt.com.cn/",
+      "description": "创建高性能和生产级别的全栈Web应用和网站"
+    },
+    {
+      "id": 5,
+      "name": "webpack",
+      "ico": "https://www.webpackjs.com/icon_144x144.png",
+      "url": "https://www.webpackjs.com/",
+      "description": "静态模块打包工具"
+    },
+    {
+      "id": 6,
+      "name": "Vite",
+      "ico": "https://cn.vitejs.dev/logo.svg",
+      "url": "https://cn.vitejs.dev/",
+      "description": "下一代的前端工具链"
+    },
+    {
+      "id": 7,
+      "name": "Mozilla",
+      "ico": "https://developer.mozilla.org/favicon-48x48.cbbd161b.png",
+      "url": "https://developer.mozilla.org/zh-CN/",
+      "description": "自 2005 年以来记录 Web 技术，包括 CSS、HTML 和 JavaScript"
+    },
+    {
+      "id": 8,
+      "name": "Component party",
+      "ico": "https://component-party.dev/favicon.png",
+      "url": "https://component-party.dev/",
+      "description": "站长极力推荐的一个各大框架对比学习的网站"
     }
   ],
   "UIFramework": [

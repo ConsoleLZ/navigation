@@ -4,6 +4,7 @@
     <div class="main">
       <div class="sidebar">
         <a href="#aboutFrontEnd">关于前端</a>
+        <a href="#documentation">重要文档</a>
         <a href="#UIFramework">UI框架</a>
         <a href="#design">设计</a>
         <a href="#tools">工具</a>
@@ -17,6 +18,16 @@
           <div style="margin-bottom: 10px;font-weight: 700">关于前端</div>
           <div style="display: flex;flex-wrap: wrap;gap: 10px">
             <a class="main_item" v-for="item in data1" :key="item.id" :data-title="item.description" :href="item.url"
+               target="_blank">
+              <div class="ico" :style="'background-image: url(' + item.ico + ')'"></div>
+              <span>{{ item.name }}</span>
+            </a>
+          </div>
+        </div>
+        <div id="documentation">
+          <div style="margin-bottom: 10px;font-weight: 700">重要文档</div>
+          <div style="display: flex;flex-wrap: wrap;gap: 10px">
+            <a class="main_item" v-for="item in data9" :key="item.id" :data-title="item.description" :href="item.url"
                target="_blank">
               <div class="ico" :style="'background-image: url(' + item.ico + ')'"></div>
               <span>{{ item.name }}</span>
@@ -133,6 +144,8 @@ const data6: Ref<webDataArr> = ref([])
 const data7: Ref<webDataArr> = ref([])
 // ui框架
 const data8: Ref<webDataArr> = ref([])
+// 重要文档
+const data9: Ref<webDataArr> = ref([])
 fetch("/json/webData.json").then(res => res.json()).then(res => {
   // 关于前端
   data1.value = res.aboutFrontEnd
@@ -200,6 +213,15 @@ fetch("/json/webData.json").then(res => res.json()).then(res => {
   // ui框架
   data8.value = res.UIFramework
   for(let item of data8.value){
+    isLink(item.ico).then(res=>{
+      if(!res){
+        item.ico = '/replace.svg'
+      }
+    })
+  }
+  // 重要文档
+  data9.value = res.documentation
+  for(let item of data9.value){
     isLink(item.ico).then(res=>{
       if(!res){
         item.ico = '/replace.svg'
