@@ -13,7 +13,7 @@ fetch("/json/h5Games.json").then(res=>res.json()).then(res=>{
   <div class="app">
     <Header></Header>
     <div class="main">
-      <a class="game_item" v-for="item in data" :key="item.id">
+      <a class="game_item" v-for="item in data" :key="item.id" :href="item.url" target="_blank">
         <div :style="'background-image: url(' + item.img + ')'"></div>
         <p>{{item.name}}</p>
       </a>
@@ -55,6 +55,8 @@ fetch("/json/h5Games.json").then(res=>res.json()).then(res=>{
   border-radius: 5px;
   cursor: pointer;
   transition: all 400ms;
+  text-decoration: none;
+  color: black;
 }
 .game_item:hover{
   box-shadow: 0 0 10px rgba(0,0,0,0.4);

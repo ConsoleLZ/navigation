@@ -18,7 +18,7 @@
           <div style="margin-bottom: 10px;font-weight: 700">关于前端</div>
           <div style="display: flex;flex-wrap: wrap;gap: 10px">
             <a class="main_item" v-for="item in data1" :key="item.id" :data-title="item.description" :href="item.url"
-               target="_blank">
+              target="_blank">
               <div class="ico" :style="'background-image: url(' + item.ico + ')'"></div>
               <span>{{ item.name }}</span>
             </a>
@@ -28,7 +28,7 @@
           <div style="margin-bottom: 10px;font-weight: 700">重要文档</div>
           <div style="display: flex;flex-wrap: wrap;gap: 10px">
             <a class="main_item" v-for="item in data9" :key="item.id" :data-title="item.description" :href="item.url"
-               target="_blank">
+              target="_blank">
               <div class="ico" :style="'background-image: url(' + item.ico + ')'"></div>
               <span>{{ item.name }}</span>
             </a>
@@ -38,7 +38,7 @@
           <div style="margin-bottom: 10px;font-weight: 700">UI框架</div>
           <div style="display: flex;flex-wrap: wrap;gap: 10px">
             <a class="main_item" v-for="item in data8" :key="item.id" :data-title="item.description" :href="item.url"
-               target="_blank">
+              target="_blank">
               <div class="ico" :style="'background-image: url(' + item.ico + ')'"></div>
               <span>{{ item.name }}</span>
             </a>
@@ -48,7 +48,7 @@
           <div style="margin-bottom: 10px;font-weight: 700">设计</div>
           <div style="display: flex;flex-wrap: wrap;gap: 10px">
             <a class="main_item" v-for="item in data6" :key="item.id" :data-title="item.description" :href="item.url"
-               target="_blank">
+              target="_blank">
               <div class="ico" :style="'background-image: url(' + item.ico + ')'"></div>
               <span>{{ item.name }}</span>
             </a>
@@ -58,7 +58,7 @@
           <div style="margin-bottom: 10px;font-weight: 700">工具</div>
           <div style="display: flex;flex-wrap: wrap;gap: 10px">
             <a class="main_item" v-for="item in data2" :key="item.id" :data-title="item.description" :href="item.url"
-               target="_blank">
+              target="_blank">
               <div class="ico" :style="'background-image: url(' + item.ico + ')'"></div>
               <span>{{ item.name }}</span>
             </a>
@@ -68,7 +68,7 @@
           <div style="margin-bottom: 10px;font-weight: 700">AI</div>
           <div style="display: flex;flex-wrap: wrap;gap: 10px">
             <a class="main_item" v-for="item in data7" :key="item.id" :data-title="item.description" :href="item.url"
-               target="_blank">
+              target="_blank">
               <div class="ico" :style="'background-image: url(' + item.ico + ')'"></div>
               <span>{{ item.name }}</span>
             </a>
@@ -78,7 +78,7 @@
           <div style="margin-bottom: 10px;font-weight: 700">云平台</div>
           <div style="display: flex;flex-wrap: wrap;gap: 10px">
             <a class="main_item" v-for="item in data3" :key="item.id" :data-title="item.description" :href="item.url"
-               target="_blank">
+              target="_blank">
               <div class="ico" :style="'background-image: url(' + item.ico + ')'"></div>
               <span>{{ item.name }}</span>
             </a>
@@ -88,7 +88,7 @@
           <div style="margin-bottom: 10px;font-weight: 700">网络安全</div>
           <div style="display: flex;flex-wrap: wrap;gap: 10px">
             <a class="main_item" v-for="item in data4" :key="item.id" :data-title="item.description" :href="item.url"
-               target="_blank">
+              target="_blank">
               <div class="ico" :style="'background-image: url(' + item.ico + ')'"></div>
               <span>{{ item.name }}</span>
             </a>
@@ -98,7 +98,7 @@
           <div style="margin-bottom: 10px;font-weight: 700">其他</div>
           <div style="display: flex;flex-wrap: wrap;gap: 10px">
             <a class="main_item" v-for="item in data5" :key="item.id" :data-title="item.description" :href="item.url"
-               target="_blank">
+              target="_blank">
               <div class="ico" :style="'background-image: url(' + item.ico + ')'"></div>
               <span>{{ item.name }}</span>
             </a>
@@ -107,17 +107,49 @@
       </div>
     </div>
   </div>
+  <footer>
+    <div class="frLink">
+      <div style="font-size: 14px;margin-bottom: 10px;">友链</div>
+      <a href="https://icp.gov.moe/?keyword=20240061" target="_blank">
+        <img src="https://icp.gov.moe/favicon.ico" alt="萌国ICP备案">
+        <span>萌ICP备20240061号</span>
+      </a>
+      <a href="https://nuxt.com.cn/" target="_blank">
+        <img src="https://nuxt.com.cn/icon.png" alt="nuxt框架">
+        <span>nuxt框架</span>
+      </a>
+    </div>
+    <div class="abInfo">
+      <div style="font-size: 14px;margin-bottom: 10px;">个人信息</div>
+      <div class="abinfo_item">
+        <span>站长</span>
+        <span>lazychild</span>
+      </div>
+      <div class="abinfo_item">
+        <span>个人博客</span>
+        <span>https://asdgjsad.github.io/</span>
+      </div>
+      <div class="abinfo_item">
+        <span>联系方式</span>
+        <span>17347187569</span>
+      </div>
+      <div class="abinfo_item">
+        <span>邮箱</span>
+        <span>17347187569@163.com</span>
+      </div>
+    </div>
+  </footer>
 </template>
 
 <script setup lang="ts">
-import {type Ref, ref} from "vue"
-import {type webDataArr} from "~/types/webData";
+import { type Ref, ref } from "vue"
+import { type webDataArr } from "~/types/webData";
 import Header from "~/components/Header.vue";
 
 // 判断图片链接是否有效
-function isLink(src:string){
+function isLink(src: string) {
   return new Promise((resolve, reject) => {
-    let img = new Image(0,0)
+    let img = new Image(0, 0)
 
     img.src = src
     img.addEventListener('load', () => {
@@ -149,81 +181,81 @@ const data9: Ref<webDataArr> = ref([])
 fetch("/json/webData.json").then(res => res.json()).then(res => {
   // 关于前端
   data1.value = res.aboutFrontEnd
-  for(let item of data1.value){
-    isLink(item.ico).then(res=>{
-      if(!res){
+  for (let item of data1.value) {
+    isLink(item.ico).then(res => {
+      if (!res) {
         item.ico = '/replace.svg'
       }
     })
   }
   // 工具
   data2.value = res.tools
-  for(let item of data2.value){
-    isLink(item.ico).then(res=>{
-      if(!res){
+  for (let item of data2.value) {
+    isLink(item.ico).then(res => {
+      if (!res) {
         item.ico = '/replace.svg'
       }
     })
   }
   // 云平台
   data3.value = res.cloudPlatform
-  for(let item of data3.value){
-    isLink(item.ico).then(res=>{
-      if(!res){
+  for (let item of data3.value) {
+    isLink(item.ico).then(res => {
+      if (!res) {
         item.ico = '/replace.svg'
       }
     })
   }
   // 网络安全
   data4.value = res.networkSecurity
-  for(let item of data4.value){
-    isLink(item.ico).then(res=>{
-      if(!res){
+  for (let item of data4.value) {
+    isLink(item.ico).then(res => {
+      if (!res) {
         item.ico = '/replace.svg'
       }
     })
   }
   // 其他
   data5.value = res.other
-  for(let item of data5.value){
-    isLink(item.ico).then(res=>{
-      if(!res){
+  for (let item of data5.value) {
+    isLink(item.ico).then(res => {
+      if (!res) {
         item.ico = '/replace.svg'
       }
     })
   }
   // 设计
   data6.value = res.design
-  for(let item of data6.value){
-    isLink(item.ico).then(res=>{
-      if(!res){
+  for (let item of data6.value) {
+    isLink(item.ico).then(res => {
+      if (!res) {
         item.ico = '/replace.svg'
       }
     })
   }
   // AI
   data7.value = res.AI
-  for(let item of data7.value){
-    isLink(item.ico).then(res=>{
-      if(!res){
+  for (let item of data7.value) {
+    isLink(item.ico).then(res => {
+      if (!res) {
         item.ico = '/replace.svg'
       }
     })
   }
   // ui框架
   data8.value = res.UIFramework
-  for(let item of data8.value){
-    isLink(item.ico).then(res=>{
-      if(!res){
+  for (let item of data8.value) {
+    isLink(item.ico).then(res => {
+      if (!res) {
         item.ico = '/replace.svg'
       }
     })
   }
   // 重要文档
   data9.value = res.documentation
-  for(let item of data9.value){
-    isLink(item.ico).then(res=>{
-      if(!res){
+  for (let item of data9.value) {
+    isLink(item.ico).then(res => {
+      if (!res) {
         item.ico = '/replace.svg'
       }
     })
@@ -253,19 +285,19 @@ fetch("/json/webData.json").then(res => res.json()).then(res => {
   font-size: 12px;
 }
 
-.sidebar>a{
+.sidebar>a {
   cursor: pointer;
   transition: all 200ms;
   text-decoration: none;
   color: black;
 }
 
-.sidebar>a:hover{
+.sidebar>a:hover {
   color: #3e68f1;
 }
 
 .sidebar_right {
-  width: 90%;
+  width: 97%;
   height: 100%;
   padding-left: 120px;
   padding-top: 50px;
@@ -279,19 +311,21 @@ fetch("/json/webData.json").then(res => res.json()).then(res => {
 }
 
 @media screen and (max-width: 550px) {
-  .sidebar{
+  .sidebar {
     display: none;
   }
-  .sidebar_right{
+
+  .sidebar_right {
     padding-left: 0;
     margin: 0 auto;
   }
-  .main_item{
+
+  .main_item {
     width: 40% !important;
   }
 }
 
-.sidebar_right > div {
+.sidebar_right>div {
   width: 100%;
   background-color: white;
   border-radius: 4px;
@@ -312,7 +346,8 @@ fetch("/json/webData.json").then(res => res.json()).then(res => {
   font-size: 16px;
   text-decoration: none;
 }
-.main_item span{
+
+.main_item span {
   width: 80%;
   padding: 5px;
   white-space: nowrap;
@@ -345,6 +380,39 @@ fetch("/json/webData.json").then(res => res.json()).then(res => {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+footer {
+  background-color: #f3f3f3;
+  padding: 20px 10px;
+  font-size: 12px;
+  width: 95vw;
+  display: flex;
+  gap: 60px;
+  position: relative;
+  z-index: 99999;
+}
+
+.frLink>a {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  margin-bottom: 5px;
+  text-decoration-line: none;
+  color: black;
+}
+
+.frLink img {
+  width: 17px;
+}
+
+.abinfo_item>span:nth-child(1) {
+  margin-right: 10px;
+  color: gray;
+  width: 60px;
+  display: inline-block;
+  text-align: justify;
+  text-align-last: justify;
 }
 </style>
 

@@ -422,6 +422,13 @@
       "ico": "https://openai.com/favicon.ico",
       "url": "https://openai.com/",
       "description": "拥有最强的chatGPT"
+    },
+    {
+      "id": 3,
+      "name": "豆包",
+      "ico": "https://p9-flow-imagex-sign.byteimg.com/ocean-cloud-tos/FileBizType.BIZ_BOT_ICON/4180773176086868_1709203591079450233_5Y6fJgvsfc.jpeg~tplv-a9rns2rl98-icon-tiny.jpeg?rk3s=9956f44f&x-expires=1719224007&x-signature=9IuG%2Bqi7IY2zIKhKL8%2FmdgUc9tI%3D",
+      "url": "https://www.doubao.com/",
+      "description": "豆包 - 抖音旗下 AI 智能助手"
     }
   ],
   "cloudPlatform": [
@@ -582,6 +589,13 @@
       "ico": "",
       "url": "https://www.emojiall.com/",
       "description": "这里有关于Emoji、Emoji含义、Emoji图片等的所有信息。"
+    },
+    {
+      "id": 12,
+      "name": "萌国ICP备案",
+      "ico": "https://icp.gov.moe/favicon.ico",
+      "url": "https://icp.gov.moe/",
+      "description": "萌友网站联萌，快来申请萌萌的ICP备案号吧!"
     }
   ]
 }

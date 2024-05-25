@@ -6,11 +6,11 @@
 html,body{
     scroll-behavior: smooth;
     font-family: Noto Sans SC;
+    background-color: #f3f3f3;
 }
 .app {
     width: 100%;
     min-height: 100vh;
-    background-color: #f3f3f3;
     display: flex;
     flex-direction: column;
     font-size: 14px;
