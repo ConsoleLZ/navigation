@@ -211,6 +211,20 @@
       "ico": "https://component-party.dev/favicon.png",
       "url": "https://component-party.dev/",
       "description": "站长极力推荐的一个各大框架对比学习的网站"
+    },
+    {
+      "id": 9,
+      "name": "React Native",
+      "ico": "https://reactnative.cn/img/favicon.ico",
+      "url": "https://reactnative.cn/",
+      "description": "使用React来创建 Android 和 iOS 的原生应用"
+    },
+    {
+      "id": 10,
+      "name": "uni-app",
+      "ico": "https://qiniu-web-assets.dcloud.net.cn/unidoc/zh/icon.png?v=1556263038788",
+      "url": "https://uniapp.dcloud.net.cn/",
+      "description": "使用Vue进行跨端开发"
     }
   ],
   "UIFramework": [
@@ -429,6 +443,20 @@
       "ico": "https://p9-flow-imagex-sign.byteimg.com/ocean-cloud-tos/FileBizType.BIZ_BOT_ICON/4180773176086868_1709203591079450233_5Y6fJgvsfc.jpeg~tplv-a9rns2rl98-icon-tiny.jpeg?rk3s=9956f44f&x-expires=1719224007&x-signature=9IuG%2Bqi7IY2zIKhKL8%2FmdgUc9tI%3D",
       "url": "https://www.doubao.com/",
       "description": "豆包 - 抖音旗下 AI 智能助手"
+    },
+    {
+      "id": 4,
+      "name": "通义千问",
+      "ico": "https://acd-assets.alicdn.com/acd_work/tongyi-portal/assets/logo.svg",
+      "url": "https://tongyi.aliyun.com/",
+      "description": "阿里达摩院推出的大模型，拥有千亿参数，可用于智能问答、知识检索、文案创作等场景"
+    },
+    {
+      "id": 5,
+      "name": "星火大模型",
+      "ico": "https://xinghuo.xfyun.cn/spark-icon.ico",
+      "url": "https://xinghuo.xfyun.cn/",
+      "description": "科大讯飞推出的AI大模型，支持对话、写作、编程等功能，还能提供语音交互方式"
     }
   ],
   "cloudPlatform": [
@@ -510,6 +538,29 @@
       "ico": "https://ctf.wgpsec.org/files/4aecfc78e9fe458cbd934aacc69ffd94/favicon.ico",
       "url": "https://ctf.wgpsec.org/",
       "description": "打CTF怎么能没有电竞椅呢!"
+    }
+  ],
+  "study": [
+    {
+      "id": 1,
+      "name": "稀土掘金",
+      "ico": "https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/static/favicons/favicon-32x32.png",
+      "url": "https://juejin.cn/",
+      "description": "一个很好的开发者社区，可以看看大佬的各种文章"
+    },
+    {
+      "id": 2,
+      "name": "CSDN",
+      "ico": "https://g.csdnimg.cn/static/logo/favicon32.ico",
+      "url": "https://www.csdn.net/",
+      "description": "各种技术文章都在这里"
+    },
+    {
+      "id": 3,
+      "name": "bilibili",
+      "ico": "https://th.bing.com/th?id=ODLS.e42d2c4d-ad65-4c7a-b0fd-817a1c3bed01&w=32&h=32&qlt=90&pcl=fffffa&o=6&pid=1.2",
+      "url": "https://www.bilibili.com/",
+      "description": "视频教学网站，学习各种知识"
     }
   ],
   "other": [
@@ -596,6 +647,13 @@
       "ico": "https://icp.gov.moe/favicon.ico",
       "url": "https://icp.gov.moe/",
       "description": "萌友网站联萌，快来申请萌萌的ICP备案号吧!"
+    },
+    {
+      "id": 13,
+      "name": "不蒜子",
+      "ico": "//busuanzi.ibruce.info/images/garlic.png",
+      "url": "https://busuanzi.ibruce.info/",
+      "description": "快速添加网站访问量、人数"
     }
   ]
 }

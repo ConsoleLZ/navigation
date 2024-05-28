@@ -11,6 +11,7 @@
         <a href="#AI">AI</a>
         <a href="#cloudPlatform">云平台</a>
         <a href="#networkSecurity">网络安全</a>
+        <a href="#study">自学神器</a>
         <a href="#other">其他</a>
       </div>
       <div class="sidebar_right">
@@ -94,6 +95,16 @@
             </a>
           </div>
         </div>
+        <div id="study">
+          <div style="margin-bottom: 10px;font-weight: 700">自学神器</div>
+          <div style="display: flex;flex-wrap: wrap;gap: 10px">
+            <a class="main_item" v-for="item in data10" :key="item.id" :data-title="item.description" :href="item.url"
+              target="_blank">
+              <div class="ico" :style="'background-image: url(' + item.ico + ')'"></div>
+              <span>{{ item.name }}</span>
+            </a>
+          </div>
+        </div>
         <div id="other">
           <div style="margin-bottom: 10px;font-weight: 700">其他</div>
           <div style="display: flex;flex-wrap: wrap;gap: 10px">
@@ -109,7 +120,7 @@
   </div>
   <footer>
     <div class="frLink">
-      <div style="font-size: 14px;margin-bottom: 10px;">友链</div>
+      <div class="title">友链</div>
       <a href="https://icp.gov.moe/?keyword=20240061" target="_blank">
         <img src="https://icp.gov.moe/favicon.ico" alt="萌国ICP备案">
         <span>萌ICP备20240061号</span>
@@ -118,9 +129,13 @@
         <img src="https://nuxt.com.cn/icon.png" alt="nuxt框架">
         <span>nuxt框架</span>
       </a>
+      <a href="https://ziyuan.baidu.com/dailysubmit/index" target="_blank">
+        <img src="https://ziyuan.baidu.com/favicon.ico" alt="百度收录">
+        <span>百度收录</span>
+      </a>
     </div>
     <div class="abInfo">
-      <div style="font-size: 14px;margin-bottom: 10px;">个人信息</div>
+      <div class="title">个人信息</div>
       <div class="abinfo_item">
         <span>站长</span>
         <span>lazychild</span>
@@ -138,11 +153,19 @@
         <span>17347187569@163.com</span>
       </div>
     </div>
+    <div class="staWeb">
+      <div class="title">站点信息</div>
+      <div>本站已经运行:<span style="letter-spacing: 2px;margin-left: 5px;">{{ webTime }}</span></div>
+      <div>本站总访问量<span id="busuanzi_value_site_pv"
+          style="padding: 2px 5px;background-color: #bdbdbd;border-radius: 2px;color: white;margin: 4px;"></span>次</div>
+      <div>本站访客数<span id="busuanzi_value_site_uv"
+          style="padding: 2px 5px;background-color: #bdbdbd;border-radius: 2px;color: white;margin: 4px;"></span>人次</div>
+    </div>
   </footer>
 </template>
 
 <script setup lang="ts">
-import { type Ref, ref } from "vue"
+import { type Ref, ref, computed } from "vue"
 import { type webDataArr } from "~/types/webData";
 import Header from "~/components/Header.vue";
 
@@ -159,6 +182,36 @@ function isLink(src: string) {
       resolve(false)
     })
   })
+}
+let webTime: Ref<string> = ref("")
+
+if (process.client) {
+  // 不断更新网站显示时间
+  setInterval(() => {
+    webTime.value = webTimeFcn()
+  }, 1000)
+}
+
+// 统计网站运行时间
+function webTimeFcn() {
+  // 创建网站的时间2024.5.12
+  const startTimeDate = new Date(2024, 4, 12, 13, 14, 52)
+  // 获取当前时间
+  var now = new Date();
+  // 计算时间差，单位为毫秒
+  var uptimeMs = now.getTime() - startTimeDate.getTime();
+  // 计算天数
+  var days = Math.floor(uptimeMs / (1000 * 60 * 60 * 24));
+  uptimeMs -= days * (1000 * 60 * 60 * 24);
+  // 计算小时数
+  var hours = Math.floor(uptimeMs / (1000 * 60 * 60));
+  uptimeMs -= hours * (1000 * 60 * 60);
+  // 计算分钟数
+  var minutes = Math.floor(uptimeMs / (1000 * 60));
+  uptimeMs -= minutes * (1000 * 60);
+  // 计算秒数
+  var seconds = Math.floor(uptimeMs / 1000);
+  return `${days}天${hours}时${minutes}分${seconds}秒`;
 }
 // 关于前端
 const data1: Ref<webDataArr> = ref([])
@@ -178,6 +231,8 @@ const data7: Ref<webDataArr> = ref([])
 const data8: Ref<webDataArr> = ref([])
 // 重要文档
 const data9: Ref<webDataArr> = ref([])
+// 自学神器
+const data10: Ref<webDataArr> = ref([])
 fetch("/json/webData.json").then(res => res.json()).then(res => {
   // 关于前端
   data1.value = res.aboutFrontEnd
@@ -260,10 +315,23 @@ fetch("/json/webData.json").then(res => res.json()).then(res => {
       }
     })
   }
+  // 自学神器
+  data10.value = res.study
+  for (let item of data10.value) {
+    isLink(item.ico).then(res => {
+      if (!res) {
+        item.ico = '/replace.svg'
+      }
+    })
+  }
 })
 </script>
 
 <style scoped>
+.staWeb div {
+  margin-bottom: 10px;
+}
+
 .main {
   width: 100%;
   flex: 1;
@@ -345,6 +413,7 @@ fetch("/json/webData.json").then(res => res.json()).then(res => {
   transition: all 200ms;
   font-size: 16px;
   text-decoration: none;
+  color: black;
 }
 
 .main_item span {
@@ -404,6 +473,16 @@ footer {
 
 .frLink img {
   width: 17px;
+}
+
+footer .title {
+  font-size: 12px;
+  margin-bottom: 10px;
+  padding: 4px 6px;
+  background-color: #231e1e;
+  color: white;
+  border-radius: 3px;
+  width: fit-content;
 }
 
 .abinfo_item>span:nth-child(1) {
