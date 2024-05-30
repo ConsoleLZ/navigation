@@ -33,6 +33,9 @@ header {
   gap: 20px;
   background-color: white;
   margin-bottom: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 20;
 }
 
 header div {

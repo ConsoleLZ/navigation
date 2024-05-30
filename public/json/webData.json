@@ -563,6 +563,22 @@
       "description": "视频教学网站，学习各种知识"
     }
   ],
+  "games": [
+    {
+      "id": 1,
+      "name": "flysheep",
+      "ico": "https://images.weserv.nl/?url=https://r534.com/flysheep/i/2023/02/25/5fgq.jpg",
+      "url": "https://www.flysheep6.com/",
+      "description": "看看有没有你喜欢的游戏吧"
+    },
+    {
+      "id": 2,
+      "name": "悟空神辅",
+      "ico": "http://www.5kfz.com/favicon.ico",
+      "url": "http://www.5kfz.com/",
+      "description": "洛克们，开启你的辅助之旅吧"
+    }
+  ],
   "other": [
     {
       "id": 1,

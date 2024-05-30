@@ -12,6 +12,7 @@
         <a href="#cloudPlatform">云平台</a>
         <a href="#networkSecurity">网络安全</a>
         <a href="#study">自学神器</a>
+        <a href="#games">游戏资源</a>
         <a href="#other">其他</a>
       </div>
       <div class="sidebar_right">
@@ -99,6 +100,16 @@
           <div style="margin-bottom: 10px;font-weight: 700">自学神器</div>
           <div style="display: flex;flex-wrap: wrap;gap: 10px">
             <a class="main_item" v-for="item in data10" :key="item.id" :data-title="item.description" :href="item.url"
+              target="_blank">
+              <div class="ico" :style="'background-image: url(' + item.ico + ')'"></div>
+              <span>{{ item.name }}</span>
+            </a>
+          </div>
+        </div>
+        <div id="games">
+          <div style="margin-bottom: 10px;font-weight: 700">游戏资源</div>
+          <div style="display: flex;flex-wrap: wrap;gap: 10px">
+            <a class="main_item" v-for="item in data11" :key="item.id" :data-title="item.description" :href="item.url"
               target="_blank">
               <div class="ico" :style="'background-image: url(' + item.ico + ')'"></div>
               <span>{{ item.name }}</span>
@@ -233,6 +244,8 @@ const data8: Ref<webDataArr> = ref([])
 const data9: Ref<webDataArr> = ref([])
 // 自学神器
 const data10: Ref<webDataArr> = ref([])
+// 游戏
+const data11: Ref<webDataArr> = ref([])
 fetch("/json/webData.json").then(res => res.json()).then(res => {
   // 关于前端
   data1.value = res.aboutFrontEnd
@@ -324,6 +337,15 @@ fetch("/json/webData.json").then(res => res.json()).then(res => {
       }
     })
   }
+  // 游戏
+  data11.value = res.games
+  for (let item of data11.value) {
+    isLink(item.ico).then(res => {
+      if (!res) {
+        item.ico = '/replace.svg'
+      }
+    })
+  }
 })
 </script>
 
@@ -397,7 +419,7 @@ fetch("/json/webData.json").then(res => res.json()).then(res => {
   width: 100%;
   background-color: white;
   border-radius: 4px;
-  padding: 10px 40px;
+  padding: 50px 40px;
   box-sizing: border-box;
 }
 
@@ -458,8 +480,14 @@ footer {
   width: 95vw;
   display: flex;
   gap: 60px;
-  position: relative;
-  z-index: 99999;
+  padding-left: 150px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 550px){
+  footer{
+    padding-left: 0;
+  }
 }
 
 .frLink>a {
