@@ -313,6 +313,13 @@
       "ico": "https://mobbin.com/favicon.svg?v=2.1",
       "url": "https://mobbin.com/",
       "description": "全球最大的移动和网页设计库"
+    },
+    {
+      "id": 7,
+      "name": "Awwwards",
+      "ico": "https://assets.awwwards.com/assets/images/favicon.svg",
+      "url": "https://www.awwwards.com/",
+      "description": "为一些优秀的网站颁发奖项，可以找找设计灵感"
     }
   ],
   "tools": [
@@ -670,6 +677,13 @@
       "ico": "//busuanzi.ibruce.info/images/garlic.png",
       "url": "https://busuanzi.ibruce.info/",
       "description": "快速添加网站访问量、人数"
+    },
+    {
+      "id": 14,
+      "name": "一元机场",
+      "ico": "",
+      "url": "https://xn--4gq62f52gdss.ink/",
+      "description": "要科学上网哦"
     }
   ]
 }
