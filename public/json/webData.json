@@ -684,6 +684,13 @@
       "ico": "",
       "url": "https://xn--4gq62f52gdss.ink/",
       "description": "要科学上网哦"
+    },
+    {
+      "id": 15,
+      "name": "wave.video",
+      "ico": "https://assets.animatron.com/landings/static/wv-favicon.ico",
+      "url": "https://wave.video/zh/tools/audio-editing/text-to-speech",
+      "description": "为你的视频增加一段语音"
     }
   ]
 }
