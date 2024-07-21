@@ -153,6 +153,41 @@
       "ico": "https://htmlrev.com/images/favicon.png",
       "url": "https://htmlrev.com/",
       "description": "网站模板"
+    },
+    {
+      "id": 26,
+      "name": "Poly Haven",
+      "ico": "https://polyhaven.com/favicon.ico",
+      "url": "https://polyhaven.com/zh",
+      "description": "公共3D资源库, 可以下载three3D的天空盒素材图片"
+    },
+    {
+      "id": 27,
+      "name": "HDRI-to-CubeMap",
+      "ico": "",
+      "url": "https://matheowis.github.io/HDRI-to-CubeMap/",
+      "description": "用来分割在Poly Haven找到的HDRI素材"
+    },
+    {
+      "id": 28,
+      "name": "threejs-journey",
+      "ico": "https://threejs-journey.com/assets/favicons/favicon.ico",
+      "url": "https://threejs-journey.com/",
+      "description": "可以学习three.js或者找找有关threeJS的作品"
+    },
+    {
+      "id": 29,
+      "name": "cannon.js",
+      "ico": "",
+      "url": "https://schteppe.github.io/cannon.js/",
+      "description": "一个轻量级和简单的 Web 3D 物理引擎。"
+    },
+    {
+      "id": 30,
+      "name": "Day.js",
+      "ico": "https://dayjs.fenxianglu.cn/assets/favicon.png",
+      "url": "https://dayjs.fenxianglu.cn/",
+      "description": "可以为现代浏览器解析、验证、操作和显示日期和时间"
     }
   ],
   "documentation": [
@@ -225,6 +260,13 @@
       "ico": "https://qiniu-web-assets.dcloud.net.cn/unidoc/zh/icon.png?v=1556263038788",
       "url": "https://uniapp.dcloud.net.cn/",
       "description": "使用Vue进行跨端开发"
+    },
+    {
+      "id": 11,
+      "name": "threeJS",
+      "ico": "https://threejs.org/files/favicon.ico",
+      "url": "https://threejs.org/",
+      "description": "开发你的3d网站吧"
     }
   ],
   "UIFramework": [
@@ -269,6 +311,20 @@
       "ico": "https://img.daisyui.com/images/daisyui-logo/daisyui-logomark.svg",
       "url": "https://daisyui.com/",
       "description": "最流行的组件库为Tailwind CSS"
+    },
+    {
+      "id": 7,
+      "name": "Ant Design",
+      "ico": "https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg",
+      "url": "https://ant.design/index-cn",
+      "description": "react组件库"
+    },
+    {
+      "id": 8,
+      "name": "Geist",
+      "ico": "https://geist-ui.dev/favicon.ico",
+      "url": "https://geist-ui.dev/zh-cn",
+      "description": "react组件库"
     }
   ],
   "design": [
@@ -320,6 +376,13 @@
       "ico": "https://assets.awwwards.com/assets/images/favicon.svg",
       "url": "https://www.awwwards.com/",
       "description": "为一些优秀的网站颁发奖项，可以找找设计灵感"
+    },
+    {
+      "id": 8,
+      "name": "站酷",
+      "ico": "https://static.zcool.cn/git_z/z/site/favicon.ico?version=1618914637608",
+      "url": "https://www.zcool.com.cn/",
+      "description": "上面或许有你需要的ui作品"
     }
   ],
   "tools": [
@@ -529,6 +592,27 @@
       "ico": "https://www.superbed.cn/favicon.ico",
       "url": "https://www.superbed.cn/",
       "description": "免费图片上传"
+    },
+    {
+      "id": 10,
+      "name": "jsdelivr",
+      "ico": "https://www.jsdelivr.com/favicon.ico",
+      "url": "https://www.jsdelivr.com/",
+      "description": "开源项目的免费 CDN"
+    },
+    {
+      "id": 11,
+      "name": "cdnjs",
+      "ico": "https://cdnjs.com/favicon.png",
+      "url": "https://cdnjs.com/",
+      "description": "免费的开源 CDN 服务"
+    },
+    {
+      "id": 12,
+      "name": "Gitlab",
+      "ico": "https://gitlab.com/assets/favicon-72a2cad5025aa931d6ea56c3201d1f18e68a8cd39788c7c80d5b2b82aa5143ef.png",
+      "url": "https://gitlab.com/",
+      "description": "项目存储与版本管理"
     }
   ],
   "networkSecurity": [
@@ -691,6 +775,20 @@
       "ico": "https://assets.animatron.com/landings/static/wv-favicon.ico",
       "url": "https://wave.video/zh/tools/audio-editing/text-to-speech",
       "description": "为你的视频增加一段语音"
+    },
+    {
+      "id": 16,
+      "name": "wallpapers-clan",
+      "ico": "https://wallpapers-clan.com/wp-content/uploads/2020/08/cropped-wallpapers-clan-favicon-3-32x32.png",
+      "url": "https://wallpapers-clan.com/",
+      "description": "有很多好看的壁纸，图标(移动端，桌面端)"
+    },
+    {
+      "id": 17,
+      "name": "面试鸭",
+      "ico": "https://www.mianshiya.com/favicon.ico",
+      "url": "https://www.mianshiya.com/",
+      "description": "题库质量高，完善，一个很好的刷题网站"
     }
   ]
 }
