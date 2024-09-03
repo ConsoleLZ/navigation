@@ -6,6 +6,7 @@
         <a href="#aboutFrontEnd">关于前端</a>
         <a href="#documentation">重要文档</a>
         <a href="#UIFramework">UI框架</a>
+        <a href="#material">素材资源</a>
         <a href="#design">设计</a>
         <a href="#tools">工具</a>
         <a href="#AI">AI</a>
@@ -40,6 +41,16 @@
           <div style="margin-bottom: 10px;font-weight: 700">UI框架</div>
           <div style="display: flex;flex-wrap: wrap;gap: 10px">
             <a class="main_item" v-for="item in data8" :key="item.id" :data-title="item.description" :href="item.url"
+              target="_blank">
+              <div class="ico" :style="'background-image: url(' + item.ico + ')'"></div>
+              <span>{{ item.name }}</span>
+            </a>
+          </div>
+        </div>
+        <div id="material">
+          <div style="margin-bottom: 10px;font-weight: 700">素材资源</div>
+          <div style="display: flex;flex-wrap: wrap;gap: 10px">
+            <a class="main_item" v-for="item in data12" :key="item.id" :data-title="item.description" :href="item.url"
               target="_blank">
               <div class="ico" :style="'background-image: url(' + item.ico + ')'"></div>
               <span>{{ item.name }}</span>
@@ -170,7 +181,8 @@
       <div>本站总访问量<span id="busuanzi_value_site_pv"
           style="padding: 2px 5px;background-color: #bdbdbd;border-radius: 2px;color: white;margin: 4px;"></span>次</div>
       <div>本站访客数<span id="busuanzi_value_site_uv"
-          style="padding: 2px 5px;background-color: #bdbdbd;border-radius: 2px;color: white;margin: 4px;"></span>人次</div>
+          style="padding: 2px 5px;background-color: #bdbdbd;border-radius: 2px;color: white;margin: 4px;"></span>人次
+      </div>
     </div>
   </footer>
 </template>
@@ -246,6 +258,8 @@ const data9: Ref<webDataArr> = ref([])
 const data10: Ref<webDataArr> = ref([])
 // 游戏
 const data11: Ref<webDataArr> = ref([])
+// 素材资源
+const data12: Ref<webDataArr> = ref([])
 fetch("/json/webData.json").then(res => res.json()).then(res => {
   // 关于前端
   data1.value = res.aboutFrontEnd
@@ -346,6 +360,15 @@ fetch("/json/webData.json").then(res => res.json()).then(res => {
       }
     })
   }
+  // 素材资源
+  data12.value = res.material
+  for (let item of data11.value) {
+    isLink(item.ico).then(res => {
+      if (!res) {
+        item.ico = '/replace.svg'
+      }
+    })
+  }
 })
 </script>
 
@@ -393,7 +416,7 @@ fetch("/json/webData.json").then(res => res.json()).then(res => {
   padding-top: 50px;
   padding-bottom: 20px;
   box-sizing: border-box;
-  overflow: auto;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -448,7 +471,7 @@ fetch("/json/webData.json").then(res => res.json()).then(res => {
 
 .main_item span:hover {
   width: fit-content;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: #3e68f1;
 }
 
 .main_item:hover::before {
@@ -461,7 +484,7 @@ fetch("/json/webData.json").then(res => res.json()).then(res => {
   left: 50%;
   transform: translateX(-50%);
   font-size: 12px;
-  white-space: nowrap;
+  display: block;
 }
 
 .ico {
@@ -484,8 +507,8 @@ footer {
   box-sizing: border-box;
 }
 
-@media screen and (max-width: 550px){
-  footer{
+@media screen and (max-width: 550px) {
+  footer {
     padding-left: 0;
   }
 }
