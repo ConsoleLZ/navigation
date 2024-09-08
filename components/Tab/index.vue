@@ -132,4 +132,9 @@ fetch(`${baseURL}/json/github.json`).then(res => res.json()).then(res => {
 .tab:is(input[type="radio"]):after {
     white-space: nowrap;
 }
+.tab-content{
+    height: 80vh;
+    overflow: auto;
+}
+
 </style>

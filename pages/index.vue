@@ -192,7 +192,7 @@ import { type webDataArr } from "~/types/webData";
 import { baseURL } from "~/public/config";
 import Navbar from "~/components/Navbar/index.vue";
 
-const onJumpBlog = ()=>{
+const onJumpBlog = () => {
   window.open('https://consolelz.github.io/')
 }
 // 判断图片链接是否有效
