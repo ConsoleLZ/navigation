@@ -1,6 +1,6 @@
 <template>
   <div class="app">
-    <Header></Header>
+    <Navbar></Navbar>
     <div class="main">
       <div class="sidebar">
         <a href="#aboutFrontEnd">关于前端</a>
@@ -143,6 +143,10 @@
   <footer>
     <div class="frLink">
       <div class="title">友链</div>
+      <a href="https://daisyui.com/" target="_blank">
+        <img src="https://img.daisyui.com/images/daisyui-logo/daisyui-logomark.svg" alt="daisyui">
+        <span>daisyui</span>
+      </a>
       <a href="https://icp.gov.moe/?keyword=20240061" target="_blank">
         <img src="https://icp.gov.moe/favicon.ico" alt="萌国ICP备案">
         <span>萌ICP备20240061号</span>
@@ -160,29 +164,24 @@
       <div class="title">个人信息</div>
       <div class="abinfo_item">
         <span>站长</span>
-        <span>lazychild</span>
+        <button class="btn btn-link btn-sm">程序猿小哲</button>
       </div>
       <div class="abinfo_item">
         <span>个人博客</span>
-        <span>https://asdgjsad.github.io/</span>
+        <button class="btn btn-link btn-sm" @click="onJumpBlog">https://consolelz.github.io/</button>
       </div>
       <div class="abinfo_item">
         <span>联系方式</span>
-        <span>17347187569</span>
+        <button class="btn btn-link btn-sm">17347187569</button>
       </div>
       <div class="abinfo_item">
         <span>邮箱</span>
-        <span>17347187569@163.com</span>
+        <button class="btn btn-link btn-sm">17347187569@163.com</button>
       </div>
     </div>
     <div class="staWeb">
       <div class="title">站点信息</div>
-      <div>本站已经运行:<span style="letter-spacing: 2px;margin-left: 5px;">{{ webTime }}</span></div>
-      <div>本站总访问量<span id="busuanzi_value_site_pv"
-          style="padding: 2px 5px;background-color: #bdbdbd;border-radius: 2px;color: white;margin: 4px;"></span>次</div>
-      <div>本站访客数<span id="busuanzi_value_site_uv"
-          style="padding: 2px 5px;background-color: #bdbdbd;border-radius: 2px;color: white;margin: 4px;"></span>人次
-      </div>
+      <div>本站已经运行:<span style="margin-left: 5px;" class="badge badge-primary badge-outline">{{ webTime }}</span></div>
     </div>
   </footer>
 </template>
@@ -190,8 +189,12 @@
 <script setup lang="ts">
 import { type Ref, ref, computed } from "vue"
 import { type webDataArr } from "~/types/webData";
-import Header from "~/components/Header.vue";
+import { baseURL } from "~/public/config";
+import Navbar from "~/components/Navbar/index.vue";
 
+const onJumpBlog = ()=>{
+  window.open('https://consolelz.github.io/')
+}
 // 判断图片链接是否有效
 function isLink(src: string) {
   return new Promise((resolve, reject) => {
@@ -260,7 +263,7 @@ const data10: Ref<webDataArr> = ref([])
 const data11: Ref<webDataArr> = ref([])
 // 素材资源
 const data12: Ref<webDataArr> = ref([])
-fetch("/json/webData.json").then(res => res.json()).then(res => {
+fetch(`${baseURL}/json/webData.json`).then(res => res.json()).then(res => {
   // 关于前端
   data1.value = res.aboutFrontEnd
   for (let item of data1.value) {
@@ -499,7 +502,7 @@ fetch("/json/webData.json").then(res => res.json()).then(res => {
 footer {
   background-color: #f3f3f3;
   padding: 20px 10px;
-  font-size: 12px;
+  font-size: 14px;
   width: 95vw;
   display: flex;
   gap: 60px;
@@ -527,7 +530,7 @@ footer {
 }
 
 footer .title {
-  font-size: 12px;
+  font-size: 14px;
   margin-bottom: 10px;
   padding: 4px 6px;
   background-color: #231e1e;

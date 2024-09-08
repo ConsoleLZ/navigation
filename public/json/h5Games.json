@@ -21,7 +21,8 @@
     "id": 4,
     "name": "3D汽车",
     "url": "https://haiyong.site/moyu/cheche/",
-    "img": "/images/4.png"
+    "img": "/images/4.png",
+    "description": "感兴趣的可以去学习一下three.js"
   },
   {
     "id": 5,

@@ -1,16 +1,17 @@
 <script setup lang="ts">
 import {ref, type Ref} from "vue"
 import {type projectArr} from "~/types/project";
+import { baseURL } from "~/public/config";
 
 let data:Ref<projectArr> = ref([])
-fetch('/json/project.json').then(res=>res.json()).then(res=>{
+fetch(`${baseURL}/json/project.json`).then(res=>res.json()).then(res=>{
   data.value = res.data
 })
 </script>
 
 <template>
   <div class="app">
-    <Header></Header>
+    <Navbar></Navbar>
     <div class="main_item" v-for="item in data" :key="item.id">
       <div class="bg" :style="'background-image: url('+ item.img + ')'"></div>
       <div class="right">

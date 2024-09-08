@@ -156,38 +156,38 @@
     },
     {
       "id": 26,
-      "name": "HDRI-to-CubeMap",
-      "ico": "",
-      "url": "https://matheowis.github.io/HDRI-to-CubeMap/",
-      "description": "用来分割在Poly Haven找到的HDRI素材"
-    },
-    {
-      "id": 27,
       "name": "threejs-journey",
       "ico": "https://threejs-journey.com/assets/favicons/favicon.ico",
       "url": "https://threejs-journey.com/",
       "description": "可以学习three.js或者找找有关threeJS的作品"
     },
     {
-      "id": 28,
+      "id": 27,
       "name": "cannon.js",
       "ico": "",
       "url": "https://schteppe.github.io/cannon.js/",
       "description": "一个轻量级和简单的 Web 3D 物理引擎。"
     },
     {
-      "id": 29,
+      "id": 28,
       "name": "Day.js",
       "ico": "https://dayjs.fenxianglu.cn/assets/favicon.png",
       "url": "https://dayjs.fenxianglu.cn/",
       "description": "可以为现代浏览器解析、验证、操作和显示日期和时间"
     },
     {
-      "id": 30,
+      "id": 29,
       "name": "Bootstrap模板",
       "ico": "https://www.bootstrapmb.com/favicon.ico",
       "url": "https://www.bootstrapmb.com/",
       "description": "高端HTML模板,学会偷懒,事半功倍"
+    },
+    {
+      "id": 30,
+      "name": "tailwindcss",
+      "ico": "https://tailwindcss.com/favicons/favicon.ico?v=3",
+      "url": "https://tailwindcss.com/",
+      "description": "快速构建现代网站，无需离开 HTML"
     }
   ],
   "documentation": [
@@ -520,6 +520,13 @@
       "ico": "https://www.onlinedo.cn/favicon.ico",
       "url": "https://www.onlinedo.cn/video-gif",
       "description": "视频转gif文件"
+    },
+    {
+      "id": 17,
+      "name": "HDRI-to-CubeMap",
+      "ico": "",
+      "url": "https://matheowis.github.io/HDRI-to-CubeMap/",
+      "description": "用来分割在Poly Haven找到的HDRI素材"
     }
   ],
   "AI": [

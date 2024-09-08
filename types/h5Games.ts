@@ -3,6 +3,7 @@ interface H5Games{
     name:string
     url:string
     img:string
+    description?:string
 }
 
 type H5GamesArr = Array<H5Games>
