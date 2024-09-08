@@ -66,31 +66,66 @@
       "url": "https://github.com/idurar/idurar-erp-crm",
       "description": "开源无头ERP CRM电子商务会计软件",
       "language": "JavaScript"
+    },
+    {
+      "id": 3,
+      "name": "mindskip / xzs",
+      "url": "https://github.com/mindskip/xzs",
+      "description": "在线考试系统",
+      "language": "JavaScript"
+    },
+    {
+      "id": 4,
+      "name": "Aras-ax / lottery",
+      "url": "https://github.com/Aras-ax/lottery",
+      "description": "🎉🌟✨🎈年会抽奖程序，基于 Express + Three.js的 3D 球体抽奖程序，奖品🧧🎁，文字，图片，抽奖规则均可配置，😜抽奖人员信息Excel一键导入😍，抽奖结果Excel导出😎，给你的抽奖活动带来全新酷炫体验🚀🚀🚀",
+      "language": "JavaScript"
     }
   ],
   "study": [
     {
-      "id": 9,
+      "id": 1,
       "name": "freeCodeCamp / freeCodeCamp",
       "url": "https://github.com/freeCodeCamp/freeCodeCamp",
       "description": "freeCodeCamp.org 的开源代码库和课程。免费学习编码。",
       "language": "TypeScript"
     },
     {
-      "id": 10,
+      "id": 2,
       "name": "GrowingGit / GitHub-Chinese-Top-Charts",
       "url": "https://github.com/GrowingGit/GitHub-Chinese-Top-Charts",
       "description": "GitHub中文排行榜，各语言分设「软件 | 资料」榜单，精准定位中文好项目。各取所需，高效学习。",
       "language": "java"
+    },
+    {
+      "id": 3,
+      "name": "krahets / hello-algo",
+      "url": "https://github.com/krahets/hello-algo",
+      "description": "《Hello 算法》：动画图解、一键运行的数据结构与算法教程。支持 Python, Java, C++, C, C#, JS, Go, Swift, Rust, Ruby, Kotlin, TS, Dart 代码。简体版和繁体版同步更新，English version ongoing",
+      "language": "java"
+    },
+    {
+      "id": 4,
+      "name": "ascoders / weekly",
+      "url": "https://github.com/ascoders/weekly",
+      "description": "前端精读周刊。帮你理解最前沿、实用的技术。",
+      "language": "JavaScript"
     }
   ],
   "amusement": [
     {
-      "id": 3,
+      "id": 1,
       "name": "Codennnn / vue-color-avatar",
       "url": "https://github.com/Codennnn/vue-color-avatar",
       "description": "一个在线头像生成器只是为了好玩 |一个纯前端实现的头像生成网站",
       "language": "Vue"
+    },
+    {
+      "id": 2,
+      "name": "zhaoolee / ChineseBQB",
+      "url": "https://github.com/zhaoolee/ChineseBQB",
+      "description": "🇨🇳 Chinese sticker pack,More joy / 表情包的博物馆, Github最有毒的仓库, 中国表情包大集合, 聚欢乐~",
+      "language": "JavaScript"
     }
   ]
 }

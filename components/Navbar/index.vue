@@ -16,6 +16,11 @@ function changePage4() {
 
 <template>
   <div class="navbar bg-base-100">
+    <div class="w-8 rounded-full">
+          <img
+            alt="logo"
+            src="/favicon.svg" />
+        </div>
     <div class="flex-1">
       <a class="btn btn-ghost text-xl" @click="changePage1">WV</a>
     </div>
