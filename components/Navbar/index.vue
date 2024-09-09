@@ -1,16 +1,10 @@
 <script setup lang="ts">
-function changePage1() {
-  location.href = '/'
-}
-function changePage2() {
-  location.href = '/h5Games'
-}
-function changePage3() {
-  location.href = '/github'
-}
+import {routerConfig} from '~/public/config.ts'
+import {type roterModel} from '~/types/router'
 
-function changePage4() {
-  location.href = '/project'
+const rConfig:roterModel[] = routerConfig
+const changePage = (url:string)=>{
+  location.href = url
 }
 </script>
 
@@ -26,10 +20,7 @@ function changePage4() {
     </div>
     <div class="flex-none">
       <ul class="menu menu-horizontal px-1">
-        <li @click="changePage1"><a>网站分享</a></li>
-        <li @click="changePage2"><a>h5小游戏</a></li>
-        <li @click="changePage3"><a>github爆火项目</a></li>
-        <li @click="changePage4"><a>我的项目</a></li>
+        <li v-for="item in rConfig" :key="item.url" @click="changePage(item.url)"><a><img width="18px" :src="item.icon">{{ item.name }}</a></li>
       </ul>
     </div>
   </div>

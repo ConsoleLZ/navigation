@@ -1,6 +1,6 @@
 <template>
     <div role="tablist" class="tabs tabs-bordered">
-        <input type="radio" name="github_hot" role="tab" class="tab" aria-label="网站开发" :checked="checked" />
+        <input type="radio" name="github_hot" role="tab" class="tab" aria-label="项目开发" :checked="checked" />
         <div role="tabpanel" class="tab-content p-10">
             <div class="box-flex">
                 <div v-for="item in data1" :key="item.id" class="card bg-base-100 shadow-xl">
