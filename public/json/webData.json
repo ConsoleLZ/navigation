@@ -332,6 +332,13 @@
       "ico": "https://geist-ui.dev/favicon.ico",
       "url": "https://geist-ui.dev/zh-cn",
       "description": "react组件库"
+    },
+    {
+      "id": 9,
+      "name": "Vant Weapp",
+      "ico": "https://img01.yzcdn.cn/vant/logo.png",
+      "url": "https://vant.pro/vant-weapp/#/home",
+      "description": "轻量、可靠的小程序 UI 组件库"
     }
   ],
   "material": [

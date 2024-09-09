@@ -102,7 +102,7 @@ const onJumpPage = (url: string)=>{
     window.open(url)
 }
 fetch(`${baseURL}/json/github.json`).then(res => res.json()).then(res => {
-    data1.value = res.site
+    data1.value = res.exploitation
     data2.value = res.css
     data3.value = res.template
     data4.value = res.study

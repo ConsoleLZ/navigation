@@ -1,5 +1,5 @@
 {
-  "site": [
+  "exploitation": [
     {
       "id": 1,
       "name": "lucaong / minisearch",
@@ -34,6 +34,27 @@
       "url": "https://github.com/VincentGarreau/particles.js",
       "description": "用于创建粒子的轻量级 JavaScript 库",
       "language": "JavaScript"
+    },
+    {
+      "id": 6,
+      "name": "socketio / socket.io",
+      "url": "https://github.com/socketio/socket.io",
+      "description": "即时通讯应用程序框架",
+      "language": "TypeScript"
+    },
+    {
+      "id": 7,
+      "name": "LarryZhu-dev / autofit.js",
+      "url": "https://github.com/LarryZhu-dev/autofit.js",
+      "description": "autofit.js 迄今为止最易用的自适应工具",
+      "language": "JavaScript"
+    },
+    {
+      "id": 8,
+      "name": "micro-zoe / micro-app",
+      "url": "https://github.com/micro-zoe/micro-app",
+      "description": "一款简约、高效、功能强大的微前端框架",
+      "language": "CSS"
     }
   ],
   "css": [
