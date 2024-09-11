@@ -55,22 +55,41 @@
       "url": "https://github.com/micro-zoe/micro-app",
       "description": "一款简约、高效、功能强大的微前端框架",
       "language": "CSS"
-    }
-  ],
-  "css": [
-    {
-      "id": 1,
-      "name": "chokcoco / iCSS",
-      "url": "https://github.com/chokcoco/iCSS",
-      "description": "不止于 CSS",
-      "language": "css"
     },
     {
-      "id": 2,
-      "name": "chokcoco / CSS-Inspiration",
-      "url": "https://github.com/chokcoco/CSS-Inspiration",
-      "description": "CSS Inspiration，在这里找到写 CSS 的灵感！",
-      "language": "css"
+      "id": 9,
+      "name": "agmmnn / awesome-blender",
+      "url": "https://github.com/agmmnn/awesome-blender",
+      "description": "精选的 Blender 插件、工具、教程列表;以及适合所有人的 3D 资源",
+      "language": "无"
+    },
+    {
+      "id": 10,
+      "name": "wangeditor-team / wangEditor",
+      "url": "https://github.com/wangeditor-team/wangEditor",
+      "description": "开源 Web 富文本编辑器",
+      "language": "TypeScript"
+    },
+    {
+      "id": 11,
+      "name": "umijs / qiankun",
+      "url": "https://github.com/umijs/qiankun",
+      "description": "为微前端提供快速、简单和完整的解决方案",
+      "language": "TypeScript"
+    },
+    {
+      "id": 12,
+      "name": "greensock / GSAP",
+      "url": "https://github.com/greensock/GSAP",
+      "description": "一个用于现代 Web 的 JavaScript 动画库",
+      "language": "JavaScript"
+    },
+    {
+      "id": 13,
+      "name": "Tencent / wujie",
+      "url": "https://github.com/Tencent/wujie",
+      "description": "极致的微前端框架",
+      "language": "TypeScript"
     }
   ],
   "template": [
@@ -100,6 +119,20 @@
       "name": "Aras-ax / lottery",
       "url": "https://github.com/Aras-ax/lottery",
       "description": "🎉🌟✨🎈年会抽奖程序，基于 Express + Three.js的 3D 球体抽奖程序，奖品🧧🎁，文字，图片，抽奖规则均可配置，😜抽奖人员信息Excel一键导入😍，抽奖结果Excel导出😎，给你的抽奖活动带来全新酷炫体验🚀🚀🚀",
+      "language": "JavaScript"
+    },
+    {
+      "id": 5,
+      "name": "PanJiaChen / vue-element-admin",
+      "url": "https://github.com/PanJiaChen/vue-element-admin",
+      "description": "🎉 一个神奇的 Vue 管理员 https://panjiachen.github.io/vue-element-admin",
+      "language": "Vue"
+    },
+    {
+      "id": 6,
+      "name": "koodo-reader / koodo-reader",
+      "url": "https://github.com/koodo-reader/koodo-reader",
+      "description": "现代电子书管理器和阅读器，具有适用于 Windows、macOS、Linux 和 Web 的同步和备份功能",
       "language": "JavaScript"
     }
   ],
@@ -131,6 +164,43 @@
       "url": "https://github.com/ascoders/weekly",
       "description": "前端精读周刊。帮你理解最前沿、实用的技术。",
       "language": "JavaScript"
+    },
+    {
+      "id": 5,
+      "name": "chokcoco / iCSS",
+      "url": "https://github.com/chokcoco/iCSS",
+      "description": "不止于 CSS",
+      "language": "css"
+    },
+    {
+      "id": 6,
+      "name": "chokcoco / CSS-Inspiration",
+      "url": "https://github.com/chokcoco/CSS-Inspiration",
+      "description": "CSS Inspiration，在这里找到写 CSS 的灵感！",
+      "language": "css"
+    },
+    {
+      "id": 7,
+      "name": "hepengwei / visualization-collection-vue",
+      "url": "https://github.com/hepengwei/visualization-collection-vue",
+      "description": "🌈 一个专注于前端视觉效果的集合应用，包含CSS动效、Canvas动画、Three.js3D、人工智能应用等上百个案例（Vue版本）",
+      "language": "Vue"
+    },
+    {
+      "id": 8,
+      "name": "Syknapse / Contribute-To-This-Project",
+      "url": "https://github.com/Syknapse/Contribute-To-This-Project",
+      "description": "这个项目正在等待您的贡献。如果您以前从未在 GitHub 上贡献过代码，那么这个项目可以帮助您入门",
+      "language": "HTML"
+    }
+  ],
+  "ai": [
+    {
+      "id": 1,
+      "name": "zhayujie / chatgpt-on-wechat",
+      "url": "https://github.com/zhayujie/chatgpt-on-wechat",
+      "description": "基于大模型搭建的聊天机器人，同时支持 微信公众号、企业微信应用、飞书、钉钉 等接入，可选择GPT3.5/GPT-4o/GPT4.0/ Claude/文心一言/讯飞星火/通义千问/ Gemini/GLM-4/Claude/Kimi/LinkAI，能处理文本、语音和图片，访问操作系统和互联网，支持基于自有知识库进行定制企业智能客服。",
+      "language": "Python"
     }
   ],
   "amusement": [
@@ -147,6 +217,22 @@
       "url": "https://github.com/zhaoolee/ChineseBQB",
       "description": "🇨🇳 Chinese sticker pack,More joy / 表情包的博物馆, Github最有毒的仓库, 中国表情包大集合, 聚欢乐~",
       "language": "JavaScript"
+    },
+    {
+      "id": 3,
+      "name": "Java-S12138 / frank",
+      "url": "https://github.com/Java-S12138/frank",
+      "description": "全新的英雄联盟助手软件，WeGame 的替代品",
+      "language": "Vue"
+    }
+  ],
+  "other": [
+    {
+      "id": 1,
+      "name": "travellings-link / travellings",
+      "url": "https://github.com/travellings-link/travellings",
+      "description": "「开往 Travellings」是一个友链接力项目，旨在通过网络跳转的方式将流量引入那些鲜为人知的独立站点。 每当用户访问加入该项目的网页时，点击该网页上的“开往”按钮将随机跳转到另一个加入该项目的网页。",
+      "language": "HTML"
     }
   ]
 }
