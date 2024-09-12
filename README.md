@@ -1,7 +1,7 @@
 ## WV
 WV, this name combines "Web" (network) and "Voyage" (voyage, travel). It encompasses various useful websites and projects I encountered during my learning process, including some software. I created this navigation website for my own convenience. It uses a completely static framework Nuxt. Anyone interested is welcome to check it out 😀
 
-[中文](https://github.com/ConsoleLZ/navigation/README.zh-cn.md)
+[中文](https://github.com/ConsoleLZ/navigation/blob/main/README.zh-cn.md)
 [demo](https://a-aa.fun/)
 
 ## Preview
