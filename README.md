@@ -5,7 +5,7 @@ WV, this name combines "Web" (network) and "Voyage" (voyage, travel). It encompa
 [demo](https://a-aa.fun/)
 
 ## Preview
-![预览图](https://github.com/ConsoleLZ/navigation/preview.png)
+![预览图](https://github.com/ConsoleLZ/navigation/blob/main/preview.png)
 
 ## Usage
 #### To Start
