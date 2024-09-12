@@ -21,9 +21,9 @@ npm run generate
 所有的数据都在public/json目录下让后在pages目录进行请求, 可以自行修改
 
 ## 特别感谢
-[daisyui](https://daisyui.com/)
-[萌国ICP备案](https://icp.gov.moe/)
-[nuxt](https://nuxt.com.cn/)
+1. [daisyui](https://daisyui.com/)
+2. [萌国ICP备案](https://icp.gov.moe/)
+3. [nuxt](https://nuxt.com.cn/)
 
 ## 说明
 本项目禁止用于商用或者非法用途, 任何违法的行为作者不承担任何责任

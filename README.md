@@ -22,9 +22,9 @@ npm run generate
 All data is located in the public/json directory and is requested within the pages directory. You can modify it as needed.
 
 ## Special thanks
-[daisyui](https://daisyui.com/)
-[萌国ICP备案](https://icp.gov.moe/)
-[nuxt](https://nuxt.com.cn/)
+1. [daisyui](https://daisyui.com/)
+2. [萌国ICP备案](https://icp.gov.moe/)
+3. [nuxt](https://nuxt.com.cn/)
 
 ## Notes
 This project is not to be used for commercial or illegal purposes. The author does not bear any responsibility for any illegal activities.
