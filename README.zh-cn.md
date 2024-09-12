@@ -4,7 +4,7 @@ WV,这个名字结合了 "Web"（网络）和 "Voyage"（航行、旅行）, 两
 [demo](https://a-aa.fun/)
 
 ## 预览
-![预览图](https://pic.imgdb.cn/item/66e2e504d9c307b7e91b1b64.png)
+![预览图](https://github.com/ConsoleLZ/navigation/preview.png)
 
 ## 使用
 #### 启动
