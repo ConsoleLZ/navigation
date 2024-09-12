@@ -187,10 +187,18 @@
 </template>
 
 <script setup lang="ts">
-import { type Ref, ref, computed } from "vue"
+import { type Ref, ref, onMounted } from "vue"
 import { type webDataArr } from "~/types/webData";
 import { baseURL } from "~/public/config";
 import Navbar from "~/components/Navbar/index.vue";
+import tools from '~/utils'
+
+onMounted(()=>{
+  const el = document.querySelector('#study') as HTMLElement
+  if(tools.observer){
+    tools.observer.observe(el)
+  }
+})
 
 const onJumpBlog = () => {
   window.open('https://consolelz.github.io/')
@@ -210,8 +218,7 @@ function isLink(src: string) {
   })
 }
 let webTime: Ref<string> = ref("")
-
-if (process.client) {
+if (import.meta.client) {
   // 不断更新网站显示时间
   setInterval(() => {
     webTime.value = webTimeFcn()
@@ -263,9 +270,9 @@ const data10: Ref<webDataArr> = ref([])
 const data11: Ref<webDataArr> = ref([])
 // 素材资源
 const data12: Ref<webDataArr> = ref([])
-fetch(`${baseURL}/json/webData.json`).then(res => res.json()).then(res => {
+$fetch(`${baseURL}/json/webData.json`).then((data:any) => {
   // 关于前端
-  data1.value = res.aboutFrontEnd
+  data1.value = data.aboutFrontEnd
   for (let item of data1.value) {
     isLink(item.ico).then(res => {
       if (!res) {
@@ -274,7 +281,7 @@ fetch(`${baseURL}/json/webData.json`).then(res => res.json()).then(res => {
     })
   }
   // 工具
-  data2.value = res.tools
+  data2.value = data.tools
   for (let item of data2.value) {
     isLink(item.ico).then(res => {
       if (!res) {
@@ -283,7 +290,7 @@ fetch(`${baseURL}/json/webData.json`).then(res => res.json()).then(res => {
     })
   }
   // 云平台
-  data3.value = res.cloudPlatform
+  data3.value = data.cloudPlatform
   for (let item of data3.value) {
     isLink(item.ico).then(res => {
       if (!res) {
@@ -292,7 +299,7 @@ fetch(`${baseURL}/json/webData.json`).then(res => res.json()).then(res => {
     })
   }
   // 网络安全
-  data4.value = res.networkSecurity
+  data4.value = data.networkSecurity
   for (let item of data4.value) {
     isLink(item.ico).then(res => {
       if (!res) {
@@ -301,7 +308,7 @@ fetch(`${baseURL}/json/webData.json`).then(res => res.json()).then(res => {
     })
   }
   // 其他
-  data5.value = res.other
+  data5.value = data.other
   for (let item of data5.value) {
     isLink(item.ico).then(res => {
       if (!res) {
@@ -310,7 +317,7 @@ fetch(`${baseURL}/json/webData.json`).then(res => res.json()).then(res => {
     })
   }
   // 设计
-  data6.value = res.design
+  data6.value = data.design
   for (let item of data6.value) {
     isLink(item.ico).then(res => {
       if (!res) {
@@ -319,7 +326,7 @@ fetch(`${baseURL}/json/webData.json`).then(res => res.json()).then(res => {
     })
   }
   // AI
-  data7.value = res.AI
+  data7.value = data.AI
   for (let item of data7.value) {
     isLink(item.ico).then(res => {
       if (!res) {
@@ -328,7 +335,7 @@ fetch(`${baseURL}/json/webData.json`).then(res => res.json()).then(res => {
     })
   }
   // ui框架
-  data8.value = res.UIFramework
+  data8.value = data.UIFramework
   for (let item of data8.value) {
     isLink(item.ico).then(res => {
       if (!res) {
@@ -337,7 +344,7 @@ fetch(`${baseURL}/json/webData.json`).then(res => res.json()).then(res => {
     })
   }
   // 重要文档
-  data9.value = res.documentation
+  data9.value = data.documentation
   for (let item of data9.value) {
     isLink(item.ico).then(res => {
       if (!res) {
@@ -346,7 +353,7 @@ fetch(`${baseURL}/json/webData.json`).then(res => res.json()).then(res => {
     })
   }
   // 自学神器
-  data10.value = res.study
+  data10.value = data.study
   for (let item of data10.value) {
     isLink(item.ico).then(res => {
       if (!res) {
@@ -355,7 +362,7 @@ fetch(`${baseURL}/json/webData.json`).then(res => res.json()).then(res => {
     })
   }
   // 游戏
-  data11.value = res.games
+  data11.value = data.games
   for (let item of data11.value) {
     isLink(item.ico).then(res => {
       if (!res) {
@@ -364,7 +371,7 @@ fetch(`${baseURL}/json/webData.json`).then(res => res.json()).then(res => {
     })
   }
   // 素材资源
-  data12.value = res.material
+  data12.value = data.material
   for (let item of data11.value) {
     isLink(item.ico).then(res => {
       if (!res) {

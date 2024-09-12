@@ -192,6 +192,27 @@
       "url": "https://github.com/Syknapse/Contribute-To-This-Project",
       "description": "这个项目正在等待您的贡献。如果您以前从未在 GitHub 上贡献过代码，那么这个项目可以帮助您入门",
       "language": "HTML"
+    },
+    {
+      "id": 9,
+      "name": "javascript-tutorial / zh.javascript.info",
+      "url": "https://github.com/javascript-tutorial/zh.javascript.info",
+      "description": "现代 JavaScript 教程（The Modern JavaScript Tutorial），以最新的 ECMAScript 规范为基准，通过简单但足够详细的内容，为你讲解从基础到高阶的 JavaScript 相关知识。",
+      "language": "HTML"
+    },
+    {
+      "id": 10,
+      "name": "sechelper / kunge-cybersecurity-learning",
+      "url": "https://github.com/sechelper/kunge-cybersecurity-learning",
+      "description": "全网首创，坤哥网安学习法，最屌没有之一",
+      "language": "HTML"
+    },
+    {
+      "id": 11,
+      "name": "you-dont-need / You-Dont-Need-JavaScript",
+      "url": "https://github.com/you-dont-need/You-Dont-Need-JavaScript",
+      "description": "CSS 很强大，你可以在没有 JS 的情况下做很多事情。",
+      "language": "HTML"
     }
   ],
   "ai": [
@@ -200,6 +221,22 @@
       "name": "zhayujie / chatgpt-on-wechat",
       "url": "https://github.com/zhayujie/chatgpt-on-wechat",
       "description": "基于大模型搭建的聊天机器人，同时支持 微信公众号、企业微信应用、飞书、钉钉 等接入，可选择GPT3.5/GPT-4o/GPT4.0/ Claude/文心一言/讯飞星火/通义千问/ Gemini/GLM-4/Claude/Kimi/LinkAI，能处理文本、语音和图片，访问操作系统和互联网，支持基于自有知识库进行定制企业智能客服。",
+      "language": "Python"
+    }
+  ],
+  "script": [
+    {
+      "id": 1,
+      "name": "Guyungy / damaihelper",
+      "url": "https://github.com/Guyungy/damaihelper",
+      "description": "支持大麦网，淘票票、缤玩岛等多个平台，演唱会演出抢票脚本",
+      "language": "HTML"
+    },
+    {
+      "id": 2,
+      "name": "gzldc / 12306",
+      "url": "https://github.com/gzldc/12306",
+      "description": "12306抢票脚本",
       "language": "Python"
     }
   ],
@@ -224,6 +261,13 @@
       "url": "https://github.com/Java-S12138/frank",
       "description": "全新的英雄联盟助手软件，WeGame 的替代品",
       "language": "Vue"
+    },
+    {
+      "id": 4,
+      "name": "Blankj / awesome-comment",
+      "url": "https://github.com/Blankj/awesome-comment",
+      "description": "有趣的评论",
+      "language": ""
     }
   ],
   "other": [
@@ -232,6 +276,13 @@
       "name": "travellings-link / travellings",
       "url": "https://github.com/travellings-link/travellings",
       "description": "「开往 Travellings」是一个友链接力项目，旨在通过网络跳转的方式将流量引入那些鲜为人知的独立站点。 每当用户访问加入该项目的网页时，点击该网页上的“开往”按钮将随机跳转到另一个加入该项目的网页。",
+      "language": "HTML"
+    },
+    {
+      "id": 2,
+      "name": "NianBroken / Firework_Simulator",
+      "url": "https://github.com/NianBroken/Firework_Simulator",
+      "description": "烟花模拟器，一个可以模拟各种烟花效果的网页|它可以展示各种绚丽多彩的烟花效果，并让人仿佛置身于真实烟花的绚丽世界之中。|模拟烟花|烟花网页|烟花绽放|烟花效果",
       "language": "HTML"
     }
   ]
