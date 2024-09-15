@@ -23,6 +23,18 @@ export default defineComponent({
             data10: [], // 自学神器
             data11: [], // 游戏
             data12: [], // 素材资源
+            isData1: false,
+            isData2: false,
+            isData3: false,
+            isData4: false,
+            isData5: false,
+            isData6: false,
+            isData7: false,
+            isData8: false,
+            isData9: false,
+            isData10: false,
+            isData11: false,
+            isData12: false,
         })
 
         if (import.meta.client) {
@@ -47,7 +59,6 @@ export default defineComponent({
                     }
                 })
             },
-            // 
             // 统计网站运行时间
             getWebTime() {
                 // 创建网站的时间2024.5.12
@@ -88,6 +99,11 @@ export default defineComponent({
                 window.open('https://consolelz.github.io/')
             }
         }
+
+        onMounted(()=>{
+            // 关于前端
+            const dom1 = document.querySelector('#aboutFrontEnd') as HTMLElement
+        })
 
         // 初始化网站数据
         methods.init()
