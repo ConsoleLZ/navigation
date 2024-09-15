@@ -4,8 +4,8 @@ import { type projectArr } from "~/types/project";
 import { baseURL } from "~/public/config";
 
 let data: Ref<projectArr> = ref([])
-$fetch(`${baseURL}/json/project.json`).then((data:any) => {
-  data.value = data.data
+$fetch(`${baseURL}/json/project.json`).then((value:any) => {
+  data.value = value.data
 })
 
 const onJumpPage = (url: string) => {

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {routerConfig} from '~/public/config.ts'
+import {routerConfig} from '~/public/config'
 import {type roterModel} from '~/types/router'
 
 const rConfig:roterModel[] = routerConfig
@@ -16,7 +16,7 @@ const changePage = (url:string)=>{
             src="/favicon.svg" />
         </div>
     <div class="flex-1">
-      <a class="btn btn-ghost text-xl" @click="changePage1">WV</a>
+      <a class="btn btn-ghost text-xl" @click="changePage('/')">WV</a>
     </div>
     <div class="flex-none">
       <ul class="menu menu-horizontal px-1">

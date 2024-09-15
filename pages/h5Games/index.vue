@@ -4,8 +4,8 @@ import { type H5GamesArr } from "~/types/h5Games";
 import { baseURL } from "~/public/config";
 
 const data: Ref<H5GamesArr> = ref([])
-$fetch(`${baseURL}/json/h5Games.json`).then((data:any) => {
-  data.value = data
+$fetch(`${baseURL}/json/h5Games.json`).then((value:any) => {
+  data.value = value
 })
 
 const onJumpPage = (url:string) =>{
