@@ -26,6 +26,9 @@ All data is located in the public/json directory and is requested within the pag
 2. [萌国ICP备案](https://icp.gov.moe/)
 3. [nuxt](https://nuxt.com.cn/)
 
+## Regarding Code Style Issues
+This project was started by the author when they were just beginning and has gone through many iterations. As a result, the code style is somewhat inconsistent. The code style in the homepage is currently better, and updates will be made based on the number of followers.
+
 ## Notes
 This project is not to be used for commercial or illegal purposes. The author does not bear any responsibility for any illegal activities.
 
