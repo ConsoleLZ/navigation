@@ -8,18 +8,18 @@ interface webData {
 
 export interface StateModel {
     webTime: string
-    data1: webData[]
-    data2: webData[]
-    data3: webData[]
-    data4: webData[]
-    data5: webData[]
-    data6: webData[]
-    data7: webData[]
-    data8: webData[]
-    data9: webData[]
-    data10: webData[]
-    data11: webData[]
-    data12: webData[]
+    aboutFrontEnd: webData[],
+    documentation: webData[],
+    UIFramework: webData[],
+    material: webData[],
+    design: webData[],
+    tools: webData[],
+    AI: webData[],
+    cloudPlatform: webData[],
+    networkSecurity: webData[],
+    study: webData[],
+    games: webData[],
+    other: webData[],
     isData1: boolean,
     isData2: boolean,
     isData3: boolean,

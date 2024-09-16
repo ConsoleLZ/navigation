@@ -20,7 +20,7 @@
         <div id="aboutFrontEnd">
           <div style="margin-bottom: 10px;font-weight: 700">关于前端</div>
           <div style="display: flex;flex-wrap: wrap;gap: 10px">
-            <a class="main_item" v-for="item in data1" :key="item.id" :data-title="item.description" :href="item.url"
+            <a class="main_item" v-for="item in aboutFrontEnd" :key="item.id" :data-title="item.description" :href="item.url"
               target="_blank">
               <div class="ico" :style="'background-image: url(' + item.ico + ')'"></div>
               <span>{{ item.name }}</span>
@@ -30,7 +30,7 @@
         <div id="documentation">
           <div style="margin-bottom: 10px;font-weight: 700">重要文档</div>
           <div style="display: flex;flex-wrap: wrap;gap: 10px">
-            <a class="main_item" v-for="item in data9" :key="item.id" :data-title="item.description" :href="item.url"
+            <a class="main_item" v-for="item in documentation" :key="item.id" :data-title="item.description" :href="item.url"
               target="_blank">
               <div class="ico" :style="'background-image: url(' + item.ico + ')'"></div>
               <span>{{ item.name }}</span>
@@ -40,7 +40,7 @@
         <div id="UIFramework">
           <div style="margin-bottom: 10px;font-weight: 700">UI框架</div>
           <div style="display: flex;flex-wrap: wrap;gap: 10px">
-            <a class="main_item" v-for="item in data8" :key="item.id" :data-title="item.description" :href="item.url"
+            <a class="main_item" v-for="item in UIFramework" :key="item.id" :data-title="item.description" :href="item.url"
               target="_blank">
               <div class="ico" :style="'background-image: url(' + item.ico + ')'"></div>
               <span>{{ item.name }}</span>
@@ -50,7 +50,7 @@
         <div id="material">
           <div style="margin-bottom: 10px;font-weight: 700">素材资源</div>
           <div style="display: flex;flex-wrap: wrap;gap: 10px">
-            <a class="main_item" v-for="item in data12" :key="item.id" :data-title="item.description" :href="item.url"
+            <a class="main_item" v-for="item in material" :key="item.id" :data-title="item.description" :href="item.url"
               target="_blank">
               <div class="ico" :style="'background-image: url(' + item.ico + ')'"></div>
               <span>{{ item.name }}</span>
@@ -60,7 +60,7 @@
         <div id="design">
           <div style="margin-bottom: 10px;font-weight: 700">设计</div>
           <div style="display: flex;flex-wrap: wrap;gap: 10px">
-            <a class="main_item" v-for="item in data6" :key="item.id" :data-title="item.description" :href="item.url"
+            <a class="main_item" v-for="item in design" :key="item.id" :data-title="item.description" :href="item.url"
               target="_blank">
               <div class="ico" :style="'background-image: url(' + item.ico + ')'"></div>
               <span>{{ item.name }}</span>
@@ -70,7 +70,7 @@
         <div id="tools">
           <div style="margin-bottom: 10px;font-weight: 700">工具</div>
           <div style="display: flex;flex-wrap: wrap;gap: 10px">
-            <a class="main_item" v-for="item in data2" :key="item.id" :data-title="item.description" :href="item.url"
+            <a class="main_item" v-for="item in tools" :key="item.id" :data-title="item.description" :href="item.url"
               target="_blank">
               <div class="ico" :style="'background-image: url(' + item.ico + ')'"></div>
               <span>{{ item.name }}</span>
@@ -80,7 +80,7 @@
         <div id="AI">
           <div style="margin-bottom: 10px;font-weight: 700">AI</div>
           <div style="display: flex;flex-wrap: wrap;gap: 10px">
-            <a class="main_item" v-for="item in data7" :key="item.id" :data-title="item.description" :href="item.url"
+            <a class="main_item" v-for="item in AI" :key="item.id" :data-title="item.description" :href="item.url"
               target="_blank">
               <div class="ico" :style="'background-image: url(' + item.ico + ')'"></div>
               <span>{{ item.name }}</span>
@@ -90,7 +90,7 @@
         <div id="cloudPlatform">
           <div style="margin-bottom: 10px;font-weight: 700">云平台</div>
           <div style="display: flex;flex-wrap: wrap;gap: 10px">
-            <a class="main_item" v-for="item in data3" :key="item.id" :data-title="item.description" :href="item.url"
+            <a class="main_item" v-for="item in cloudPlatform" :key="item.id" :data-title="item.description" :href="item.url"
               target="_blank">
               <div class="ico" :style="'background-image: url(' + item.ico + ')'"></div>
               <span>{{ item.name }}</span>
@@ -100,7 +100,7 @@
         <div id="networkSecurity">
           <div style="margin-bottom: 10px;font-weight: 700">网络安全</div>
           <div style="display: flex;flex-wrap: wrap;gap: 10px">
-            <a class="main_item" v-for="item in data4" :key="item.id" :data-title="item.description" :href="item.url"
+            <a class="main_item" v-for="item in networkSecurity" :key="item.id" :data-title="item.description" :href="item.url"
               target="_blank">
               <div class="ico" :style="'background-image: url(' + item.ico + ')'"></div>
               <span>{{ item.name }}</span>
@@ -110,7 +110,7 @@
         <div id="study">
           <div style="margin-bottom: 10px;font-weight: 700">自学神器</div>
           <div style="display: flex;flex-wrap: wrap;gap: 10px">
-            <a class="main_item" v-for="item in data10" :key="item.id" :data-title="item.description" :href="item.url"
+            <a class="main_item" v-for="item in study" :key="item.id" :data-title="item.description" :href="item.url"
               target="_blank">
               <div class="ico" :style="'background-image: url(' + item.ico + ')'"></div>
               <span>{{ item.name }}</span>
@@ -120,7 +120,7 @@
         <div id="games">
           <div style="margin-bottom: 10px;font-weight: 700">游戏资源</div>
           <div style="display: flex;flex-wrap: wrap;gap: 10px">
-            <a class="main_item" v-for="item in data11" :key="item.id" :data-title="item.description" :href="item.url"
+            <a class="main_item" v-for="item in games" :key="item.id" :data-title="item.description" :href="item.url"
               target="_blank">
               <div class="ico" :style="'background-image: url(' + item.ico + ')'"></div>
               <span>{{ item.name }}</span>
@@ -130,7 +130,7 @@
         <div id="other">
           <div style="margin-bottom: 10px;font-weight: 700">其他</div>
           <div style="display: flex;flex-wrap: wrap;gap: 10px">
-            <a class="main_item" v-for="item in data5" :key="item.id" :data-title="item.description" :href="item.url"
+            <a class="main_item" v-for="item in other" :key="item.id" :data-title="item.description" :href="item.url"
               target="_blank">
               <div class="ico" :style="'background-image: url(' + item.ico + ')'"></div>
               <span>{{ item.name }}</span>

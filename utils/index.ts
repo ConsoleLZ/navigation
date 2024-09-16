@@ -1,7 +1,7 @@
 import {type toolsModel} from './tyeps'
 
 const tools:toolsModel = {
-  observer: null
+  observer: null,
 }
 
 // 观察元素是否进入视口
@@ -10,10 +10,10 @@ if(import.meta.client){
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         // 元素已进入视口
-        console.log('Element is in the viewport');
+        console.log(entry.target.id)
+        entry.target.classList.add('animation')
       } else {
         // 元素不在视口内
-        console.log('Element is not in the viewport');
       }
     });
   }, {

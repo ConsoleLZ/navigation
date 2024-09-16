@@ -11,18 +11,18 @@ export default defineComponent({
     setup() {
         const state = reactive<StateModel>({
             webTime: '',
-            data1: [], // 关于前端
-            data2: [], // 工具
-            data3: [], // 云平台
-            data4: [], // 网络安全
-            data5: [], // 其他
-            data6: [], // 设计
-            data7: [], // AI
-            data8: [], // ui框架
-            data9: [], // 重要文档
-            data10: [], // 自学神器
-            data11: [], // 游戏
-            data12: [], // 素材资源
+            aboutFrontEnd: [],
+            documentation: [],
+            UIFramework: [],
+            material: [],
+            design: [],
+            tools: [],
+            AI: [],
+            cloudPlatform: [],
+            networkSecurity: [],
+            study: [],
+            games: [],
+            other: [],
             isData1: false,
             isData2: false,
             isData3: false,
@@ -49,8 +49,8 @@ export default defineComponent({
             init() {
                 $fetch(`${baseURL}/json/webData.json`).then((data: any) => {
                     // 关于前端
-                    state.data1 = data.aboutFrontEnd
-                    for (let item of state.data1) {
+                    state.aboutFrontEnd = data.aboutFrontEnd
+                    for (let item of state.aboutFrontEnd) {
                         methods.isLink(item.ico).then(res => {
                             if (!res) {
                                 item.ico = '/replace.svg'
@@ -103,6 +103,7 @@ export default defineComponent({
         onMounted(()=>{
             // 关于前端
             const dom1 = document.querySelector('#aboutFrontEnd') as HTMLElement
+            tools.observer?.observe(dom1)
         })
 
         // 初始化网站数据
