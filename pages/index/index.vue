@@ -19,7 +19,7 @@
       <div class="sidebar_right">
         <div id="aboutFrontEnd">
           <div style="margin-bottom: 10px;font-weight: 700">关于前端</div>
-          <div v-if="aboutFrontEnd.length" style="display: flex;flex-wrap: wrap;gap: 10px">
+          <div style="display: flex;flex-wrap: wrap;gap: 10px">
             <a class="main_item" v-for="item in aboutFrontEnd" :key="item.id" :data-title="item.description" :href="item.url"
               target="_blank">
               <div class="ico" :style="'background-image: url(' + item.ico + ')'"></div>

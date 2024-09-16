@@ -8,7 +8,6 @@ interface webData {
 
 export interface StateModel {
     [key: string]: any;
-    webTime: string
     aboutFrontEnd: webData[],
     documentation: webData[],
     UIFramework: webData[],

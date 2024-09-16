@@ -170,15 +170,15 @@
     text-align-last: justify;
   }
   .animation {
-    animation: show 1s;
+    animation: show 600ms;
   }
   @keyframes show {
     0% {
-      transform: scale(0);
+      transform: translateX(100px) scale(0.7);
       opacity: 0;
     }
     100% {
-      transform: scale(1);
+      transform: translateX(0) scale(1);
       opacity: 1;
     }
   }

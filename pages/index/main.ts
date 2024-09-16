@@ -1,4 +1,4 @@
-import { defineComponent, reactive } from 'vue'
+import { defineComponent, reactive, watch, nextTick } from 'vue'
 import { baseURL } from "~/public/config";
 import { type StateModel } from './types'
 import Navbar from "~/components/Navbar/index.vue";
@@ -8,8 +8,8 @@ export default defineComponent({
         Navbar
     },
     setup() {
+        const webTime = ref<string>('')
         const state = reactive<StateModel>({
-            webTime: '',
             aboutFrontEnd: [],
             documentation: [],
             UIFramework: [],
@@ -27,7 +27,7 @@ export default defineComponent({
         if (import.meta.client) {
             // 不断更新网站显示时间
             setInterval(() => {
-                state.webTime = methods.getWebTime()
+                webTime.value = methods.getWebTime()
             }, 1000)
         }
 
@@ -62,7 +62,7 @@ export default defineComponent({
                 return `${days}天${hours}时${minutes}分${seconds}秒`;
             },
             // 判断图片链接是否有效
-            isLink(url: string) :Promise<boolean>{
+            isLink(url: string): Promise<boolean> {
                 return new Promise((resolve, reject) => {
                     let img = new Image(0, 0)
 
@@ -81,8 +81,12 @@ export default defineComponent({
             }
         }
 
+        // 记录当前是哪个元素进入视口
+        let viewDom: string = ''
+        // 存储目前有哪些元素已经进入了视口
+        const viewList:string[] = []
         onMounted(async () => {
-            const dataList:any = await methods.init()
+            const dataList: any = await methods.init()
             // 关于前端
             const dom: HTMLElement[] = [
                 document.querySelector('#aboutFrontEnd') as HTMLElement,
@@ -98,23 +102,22 @@ export default defineComponent({
                 document.querySelector('#games') as HTMLElement,
                 document.querySelector('#other') as HTMLElement,
             ]
-            // 记录当前是哪个元素进入视口
-            let viewList: string = ''
             if (import.meta.client) {
                 const observer = new IntersectionObserver((entries) => {
                     entries.forEach(entry => {
                         if (entry.isIntersecting) {
                             // 元素已进入视口
-                            entry.target.classList.add('animation')
-                            viewList = entry.target.id
-                            dataList[viewList].forEach(async(item:any)=>{
+                            viewDom = entry.target.id
+                            dataList[viewDom].forEach(async (item: any) => {
                                 const isLink = await methods.isLink(item.ico)
-                                if(!isLink){
+                                if (!isLink) {
                                     item.ico = '/replace.svg'
                                 }
                             })
-                            console.log(dataList[viewList])
-                            state[viewList] = dataList[viewList]
+                            state[viewDom] = dataList[viewDom]
+                            if(!viewList.includes(viewDom)){
+                                viewList.push(viewDom)
+                            }
                             // 取消对该元素的监听
                             observer.unobserve(entry.target);
                         } else {
@@ -122,7 +125,7 @@ export default defineComponent({
                         }
                     });
                 }, {
-                    threshold: 1 // 当元素至少有50%进入视口时触发回调
+                    rootMargin: '0px 0px -100px 0px', // 提前加载高度
                 });
                 // 循环进行监听
                 dom.forEach(item => {
@@ -131,7 +134,19 @@ export default defineComponent({
             }
         })
 
+        watch(state, (value) => {
+            nextTick(() => {
+                viewList.forEach(item=>{
+                    const domList = Array.from(document.querySelectorAll(`#${item} div`)[1].children)
+                    domList.forEach((item: any)=>{
+                        item.classList.add('animation')
+                    })
+                })
+            })
+        })
+
         return {
+            webTime,
             ...toRefs(state),
             ...methods
         }
