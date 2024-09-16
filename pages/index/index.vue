@@ -19,7 +19,7 @@
       <div class="sidebar_right">
         <div id="aboutFrontEnd">
           <div style="margin-bottom: 10px;font-weight: 700">关于前端</div>
-          <div style="display: flex;flex-wrap: wrap;gap: 10px">
+          <div v-if="aboutFrontEnd.length" style="display: flex;flex-wrap: wrap;gap: 10px">
             <a class="main_item" v-for="item in aboutFrontEnd" :key="item.id" :data-title="item.description" :href="item.url"
               target="_blank">
               <div class="ico" :style="'background-image: url(' + item.ico + ')'"></div>
@@ -29,7 +29,7 @@
         </div>
         <div id="documentation">
           <div style="margin-bottom: 10px;font-weight: 700">重要文档</div>
-          <div style="display: flex;flex-wrap: wrap;gap: 10px">
+          <div v-if="documentation.length" style="display: flex;flex-wrap: wrap;gap: 10px">
             <a class="main_item" v-for="item in documentation" :key="item.id" :data-title="item.description" :href="item.url"
               target="_blank">
               <div class="ico" :style="'background-image: url(' + item.ico + ')'"></div>
@@ -39,7 +39,7 @@
         </div>
         <div id="UIFramework">
           <div style="margin-bottom: 10px;font-weight: 700">UI框架</div>
-          <div style="display: flex;flex-wrap: wrap;gap: 10px">
+          <div v-if="UIFramework.length" style="display: flex;flex-wrap: wrap;gap: 10px">
             <a class="main_item" v-for="item in UIFramework" :key="item.id" :data-title="item.description" :href="item.url"
               target="_blank">
               <div class="ico" :style="'background-image: url(' + item.ico + ')'"></div>
@@ -49,7 +49,7 @@
         </div>
         <div id="material">
           <div style="margin-bottom: 10px;font-weight: 700">素材资源</div>
-          <div style="display: flex;flex-wrap: wrap;gap: 10px">
+          <div v-if="material.length" style="display: flex;flex-wrap: wrap;gap: 10px">
             <a class="main_item" v-for="item in material" :key="item.id" :data-title="item.description" :href="item.url"
               target="_blank">
               <div class="ico" :style="'background-image: url(' + item.ico + ')'"></div>
@@ -59,7 +59,7 @@
         </div>
         <div id="design">
           <div style="margin-bottom: 10px;font-weight: 700">设计</div>
-          <div style="display: flex;flex-wrap: wrap;gap: 10px">
+          <div v-if="design.length" style="display: flex;flex-wrap: wrap;gap: 10px">
             <a class="main_item" v-for="item in design" :key="item.id" :data-title="item.description" :href="item.url"
               target="_blank">
               <div class="ico" :style="'background-image: url(' + item.ico + ')'"></div>
@@ -69,7 +69,7 @@
         </div>
         <div id="tools">
           <div style="margin-bottom: 10px;font-weight: 700">工具</div>
-          <div style="display: flex;flex-wrap: wrap;gap: 10px">
+          <div v-if="tools.length" style="display: flex;flex-wrap: wrap;gap: 10px">
             <a class="main_item" v-for="item in tools" :key="item.id" :data-title="item.description" :href="item.url"
               target="_blank">
               <div class="ico" :style="'background-image: url(' + item.ico + ')'"></div>
@@ -79,7 +79,7 @@
         </div>
         <div id="AI">
           <div style="margin-bottom: 10px;font-weight: 700">AI</div>
-          <div style="display: flex;flex-wrap: wrap;gap: 10px">
+          <div v-if="AI.length" style="display: flex;flex-wrap: wrap;gap: 10px">
             <a class="main_item" v-for="item in AI" :key="item.id" :data-title="item.description" :href="item.url"
               target="_blank">
               <div class="ico" :style="'background-image: url(' + item.ico + ')'"></div>
@@ -89,7 +89,7 @@
         </div>
         <div id="cloudPlatform">
           <div style="margin-bottom: 10px;font-weight: 700">云平台</div>
-          <div style="display: flex;flex-wrap: wrap;gap: 10px">
+          <div v-if="cloudPlatform.length" style="display: flex;flex-wrap: wrap;gap: 10px">
             <a class="main_item" v-for="item in cloudPlatform" :key="item.id" :data-title="item.description" :href="item.url"
               target="_blank">
               <div class="ico" :style="'background-image: url(' + item.ico + ')'"></div>
@@ -99,7 +99,7 @@
         </div>
         <div id="networkSecurity">
           <div style="margin-bottom: 10px;font-weight: 700">网络安全</div>
-          <div style="display: flex;flex-wrap: wrap;gap: 10px">
+          <div v-if="networkSecurity.length" style="display: flex;flex-wrap: wrap;gap: 10px">
             <a class="main_item" v-for="item in networkSecurity" :key="item.id" :data-title="item.description" :href="item.url"
               target="_blank">
               <div class="ico" :style="'background-image: url(' + item.ico + ')'"></div>
@@ -109,7 +109,7 @@
         </div>
         <div id="study">
           <div style="margin-bottom: 10px;font-weight: 700">自学神器</div>
-          <div style="display: flex;flex-wrap: wrap;gap: 10px">
+          <div v-if="study.length" style="display: flex;flex-wrap: wrap;gap: 10px">
             <a class="main_item" v-for="item in study" :key="item.id" :data-title="item.description" :href="item.url"
               target="_blank">
               <div class="ico" :style="'background-image: url(' + item.ico + ')'"></div>
@@ -119,7 +119,7 @@
         </div>
         <div id="games">
           <div style="margin-bottom: 10px;font-weight: 700">游戏资源</div>
-          <div style="display: flex;flex-wrap: wrap;gap: 10px">
+          <div v-if="games.length" style="display: flex;flex-wrap: wrap;gap: 10px">
             <a class="main_item" v-for="item in games" :key="item.id" :data-title="item.description" :href="item.url"
               target="_blank">
               <div class="ico" :style="'background-image: url(' + item.ico + ')'"></div>
@@ -129,7 +129,7 @@
         </div>
         <div id="other">
           <div style="margin-bottom: 10px;font-weight: 700">其他</div>
-          <div style="display: flex;flex-wrap: wrap;gap: 10px">
+          <div v-if="other.length" style="display: flex;flex-wrap: wrap;gap: 10px">
             <a class="main_item" v-for="item in other" :key="item.id" :data-title="item.description" :href="item.url"
               target="_blank">
               <div class="ico" :style="'background-image: url(' + item.ico + ')'"></div>
