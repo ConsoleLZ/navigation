@@ -188,6 +188,13 @@
       "ico": "https://tailwindcss.com/favicons/favicon.ico?v=3",
       "url": "https://tailwindcss.com/",
       "description": "快速构建现代网站，无需离开 HTML"
+    },
+    {
+      "id": 31,
+      "name": "ScrollReveal",
+      "ico": "https://scrollrevealjs.org/favicon.ico",
+      "url": "https://scrollrevealjs.org/",
+      "description": "当元素滚动到视图中时，为元素添加动画效果"
     }
   ],
   "documentation": [

@@ -19,6 +19,11 @@ export const routerConfig:roterModel[] = [
         icon: '/images/navbar/software.svg'
     },
     {
+        url: '/vscode',
+        name: 'vscode推荐插件',
+        icon: '/images/navbar/vscode.svg'
+    },
+    {
         url: '/h5Games',
         name: 'h5小游戏',
         icon: '/images/navbar/games.svg'

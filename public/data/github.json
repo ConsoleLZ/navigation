@@ -90,6 +90,20 @@
       "url": "https://github.com/Tencent/wujie",
       "description": "极致的微前端框架",
       "language": "TypeScript"
+    },
+    {
+      "id": 14,
+      "name": "jlmakes / scrollreveal",
+      "url": "https://github.com/jlmakes/scrollreveal",
+      "description": "当元素滚动到视图中时，为元素添加动画效果。",
+      "language": "JavaScript"
+    },
+    {
+      "id": 15,
+      "name": "kylefarris / clamscan",
+      "url": "https://github.com/kylefarris/clamscan",
+      "description": "强大的 ClamAV 病毒扫描库，支持使用本地套接字、本地/远程 TCP 和本地 Clamscan/clamdscan 二进制文件（带故障转移）扫描文件、目录和流。",
+      "language": "JavaScript"
     }
   ],
   "template": [
