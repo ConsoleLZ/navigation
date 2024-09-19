@@ -1,7 +1,5 @@
 import {type roterModel} from '~/types/router'
 
-export const baseURL = ''
-
 export const routerConfig:roterModel[] = [
     {
         url: '/',

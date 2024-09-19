@@ -116,8 +116,8 @@
 
 <script lang="ts" setup>
 import { ref } from "vue"
-import { baseURL } from "~/public/config";
 import type { GithubModel } from "~/types/github";
+import { data } from '~/public/data/github'
 
 // 网站开发
 const data1 = ref<GithubModel[]>()
@@ -134,18 +134,16 @@ const data6 = ref<GithubModel[]>()
 // 脚本
 const data7 = ref<GithubModel[]>()
 const checked = ref(true)
-const onJumpPage = (url: string)=>{
+const onJumpPage = (url: string) => {
     window.open(url)
 }
-$fetch(`${baseURL}/json/github.json`).then((data: any) => {
-    data1.value = data.exploitation
-    data2.value = data.other
-    data3.value = data.template
-    data4.value = data.study
-    data5.value = data.amusement
-    data6.value = data.ai
-    data7.value = data.script
-})
+data1.value = data.exploitation
+data2.value = data.other
+data3.value = data.template
+data4.value = data.study
+data5.value = data.amusement
+data6.value = data.ai
+data7.value = data.script
 </script>
 
 <style scoped>
@@ -170,9 +168,9 @@ $fetch(`${baseURL}/json/github.json`).then((data: any) => {
 .tab:is(input[type="radio"]):after {
     white-space: nowrap;
 }
-.tab-content{
+
+.tab-content {
     height: 80vh;
     overflow: auto;
 }
-
 </style>

@@ -1,12 +1,5 @@
 <script setup lang="ts">
-import { ref, type Ref } from "vue"
-import { type projectArr } from "~/types/project";
-import { baseURL } from "~/public/config";
-
-let data: Ref<projectArr> = ref([])
-$fetch(`${baseURL}/json/project.json`).then((value:any) => {
-  data.value = value.data
-})
+import {data} from '~/public/data/project'
 
 const onJumpPage = (url: string) => {
   window.open(url)

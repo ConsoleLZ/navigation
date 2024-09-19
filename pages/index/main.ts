@@ -1,7 +1,7 @@
 import { defineComponent, reactive, watch, nextTick } from 'vue'
-import { baseURL } from "~/public/config";
 import { type StateModel } from './types'
 import Navbar from "~/components/Navbar/index.vue";
+import { data } from '~/public/data/webData';
 
 export default defineComponent({
     components: {
@@ -32,14 +32,6 @@ export default defineComponent({
         }
 
         const methods = {
-            // 初始化网站数据
-            init() {
-                return new Promise(resolve => {
-                    $fetch(`${baseURL}/json/webData.json`).then(data => {
-                        resolve(data)
-                    })
-                })
-            },
             // 统计网站运行时间
             getWebTime() {
                 // 创建网站的时间2024.5.12
@@ -85,8 +77,8 @@ export default defineComponent({
         let viewDom: string = ''
         // 存储目前有哪些元素已经进入了视口
         const viewList:string[] = []
-        onMounted(async () => {
-            const dataList: any = await methods.init()
+        const dataList: any = data
+        onMounted(() => {
             // 关于前端
             const dom: HTMLElement[] = [
                 document.querySelector('#aboutFrontEnd') as HTMLElement,

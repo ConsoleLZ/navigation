@@ -1,12 +1,5 @@
 <script setup lang="ts">
-import { type Ref, ref } from "vue"
-import { type H5GamesArr } from "~/types/h5Games";
-import { baseURL } from "~/public/config";
-
-const data: Ref<H5GamesArr> = ref([])
-$fetch(`${baseURL}/json/h5Games.json`).then((value:any) => {
-  data.value = value
-})
+import {data} from '~/public/data/h5Games'
 
 const onJumpPage = (url:string) =>{
   window.open(url)
