@@ -18,7 +18,7 @@ npm run generate
 ```
 
 #### 数据来源
-所有的数据都在public/json目录下让后在pages目录进行请求, 可以自行修改
+所有的数据都在public/data目录下,可以自行配置
 
 ## 特别感谢
 1. [daisyui](https://daisyui.com/)

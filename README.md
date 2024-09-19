@@ -19,7 +19,7 @@ npm run generate
 ```
 
 #### Data Source
-All data is located in the public/json directory and is requested within the pages directory. You can modify it as needed.
+All data is in the public/data directory and can be configured by itself.
 
 ## Special thanks
 1. [daisyui](https://daisyui.com/)
