@@ -1,7 +1,7 @@
 <template>
     <div class="app">
         <Navbar />
-        <FlexContainer :dataList="data" />
+        <Container :dataList="data" />
     </div>
 </template>
 
