@@ -195,7 +195,14 @@ export const data = {
             ico: 'https://scrollrevealjs.org/favicon.ico',
             url: 'https://scrollrevealjs.org/',
             description: '当元素滚动到视图中时，为元素添加动画效果'
-        }
+        },
+        {
+            id: 32,
+            name: 'Emojipedia',
+            ico: 'https://emojipedia.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo-icon.e5eb7dea.webp&w=128&q=75',
+            url: 'https://emojipedia.org/',
+            description: 'Emoji合集'
+        },
     ],
     documentation: [
         {
@@ -295,6 +302,27 @@ export const data = {
             ico: 'https://zh.javascript.info/img/favicon/favicon.png',
             url: 'https://zh.javascript.info/',
             description: '以最新的 JavaScript 标准为基准。通过简单但足够详细的内容，为你讲解从基础到高阶的 JavaScript 相关知识。'
+        },
+        {
+            id: 15,
+            name: 'Three.js中文网',
+            ico: 'http://webgl3d.cn/img/favicon.ico',
+            url: 'http://webgl3d.cn/',
+            description: '创作你的3d网站'
+        },
+        {
+            id: 16,
+            name: 'pixiJS',
+            ico: 'https://pixijs.com/images/favicon.png',
+            url: 'https://pixijs.com/',
+            description: '使用最快、最灵活的 2D WebGL 渲染器创建精美的数字内容。'
+        },
+        {
+            id: 17,
+            name: 'w3school',
+            ico: 'https://www.w3school.com.cn/ui2019/logo-32-red.png',
+            url: 'https://www.w3school.com.cn/',
+            description: '领先的 Web 技术教程 - 全部免费'
         }
     ],
     UIFramework: [
@@ -569,6 +597,13 @@ export const data = {
             ico: '',
             url: 'https://matheowis.github.io/HDRI-to-CubeMap/',
             description: '用来分割在Poly Haven找到的HDRI素材'
+        },
+        {
+            id: 18,
+            name: '影刀',
+            ico: 'https://winrobot-pub-a-oss.winrobot360.com/static/home/favicon.ico',
+            url: 'https://www.yingdao.com/',
+            description: '我们创造软件机器人，让人不需要像机器一样工作'
         }
     ],
     AI: [
@@ -738,6 +773,13 @@ export const data = {
             ico: 'https://th.bing.com/th?id=ODLS.e42d2c4d-ad65-4c7a-b0fd-817a1c3bed01&w=32&h=32&qlt=90&pcl=fffffa&o=6&pid=1.2',
             url: 'https://www.bilibili.com/',
             description: '视频教学网站，学习各种知识'
+        },
+        {
+            id: 4,
+            name: '中国独立开发者项目',
+            ico: 'https://developer.hubing.online/favicon.png',
+            url: 'https://developer.hubing.online',
+            description: '各种大佬的项目'
         }
     ],
     games: [

@@ -234,6 +234,13 @@ export const data = {
             url: 'https://github.com/you-dont-need/You-Dont-Need-JavaScript',
             description: 'CSS 很强大，你可以在没有 JS 的情况下做很多事情。',
             language: 'HTML'
+        },
+        {
+            id: 12,
+            name: '1c7 / chinese-independent-developer',
+            url: 'https://github.com/1c7/chinese-independent-developer',
+            description: '👩🏿‍💻👨🏾‍💻👩🏼‍💻👨🏽‍💻👩🏻‍💻中国独立开发者项目列表 -- 分享大家都在做什么',
+            language: '无'
         }
     ],
     ai: [

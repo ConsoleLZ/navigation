@@ -4,7 +4,7 @@
     <div class="main">
       <div class="sidebar">
         <a href="#aboutFrontEnd">关于前端</a>
-        <a href="#documentation">重要文档</a>
+        <a href="#documentation">前端文档</a>
         <a href="#UIFramework">UI框架</a>
         <a href="#material">素材资源</a>
         <a href="#design">设计</a>
@@ -12,12 +12,13 @@
         <a href="#AI">AI</a>
         <a href="#cloudPlatform">云平台</a>
         <a href="#networkSecurity">网络安全</a>
-        <a href="#study">自学神器</a>
+        <a href="#study">学习</a>
         <a href="#games">游戏资源</a>
         <a href="#other">其他</a>
       </div>
       <div class="sidebar_right">
         <div id="aboutFrontEnd">
+          <button></button>
           <div style="margin-bottom: 10px;font-weight: 700">关于前端</div>
           <div style="display: flex;flex-wrap: wrap;gap: 10px">
             <a class="main_item" v-for="item in aboutFrontEnd" :key="item.id" :data-title="item.description" :href="item.url"
@@ -28,7 +29,7 @@
           </div>
         </div>
         <div id="documentation">
-          <div style="margin-bottom: 10px;font-weight: 700">重要文档</div>
+          <div style="margin-bottom: 10px;font-weight: 700">前端文档</div>
           <div v-if="documentation.length" style="display: flex;flex-wrap: wrap;gap: 10px">
             <a class="main_item" v-for="item in documentation" :key="item.id" :data-title="item.description" :href="item.url"
               target="_blank">
@@ -108,7 +109,7 @@
           </div>
         </div>
         <div id="study">
-          <div style="margin-bottom: 10px;font-weight: 700">自学神器</div>
+          <div style="margin-bottom: 10px;font-weight: 700">学习</div>
           <div v-if="study.length" style="display: flex;flex-wrap: wrap;gap: 10px">
             <a class="main_item" v-for="item in study" :key="item.id" :data-title="item.description" :href="item.url"
               target="_blank">

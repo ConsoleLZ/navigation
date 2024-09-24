@@ -40,5 +40,17 @@ export const data = [
         name: "Auto Rename Tag",
         des: "自动重命名配对的 HTML/XML 标签",
         img: "/images/vscode/auto-rename-tag.png"
+    },
+    {
+        id: 8,
+        name: "project-tree",
+        des: "安装插件，按 ctrl+shift+p 并输入 Project Tree 进入。 在 README.md 中生成项目的树状结构。",
+        img: "/images/vscode/project-tree.jpg"
+    },
+    {
+        id: 9,
+        name: "Color Highlight",
+        des: "在编辑器中突出显示 Web 颜色",
+        img: "/images/vscode/color-highlight.jpg"
     }
 ]
