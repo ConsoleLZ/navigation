@@ -1,5 +1,5 @@
 import {defineComponent} from 'vue'
-import {data} from '~/public/data/vscode'
+import {data} from '~/public/data/addon'
 
 export default defineComponent({
     setup(){

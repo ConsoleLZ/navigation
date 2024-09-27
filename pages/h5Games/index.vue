@@ -8,8 +8,8 @@ const onJumpPage = (url:string) =>{
 </script>
 
 <template>
+  <Navbar></Navbar>
   <div class="app">
-    <Navbar></Navbar>
     <div class="main">
       <div v-for="item in data" :key="item.id" class="card bg-base-100 image-full shadow-xl">
         <figure>

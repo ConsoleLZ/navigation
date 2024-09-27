@@ -203,6 +203,13 @@ export const data = {
             url: 'https://emojipedia.org/',
             description: 'Emoji合集'
         },
+        {
+            id: 33,
+            name: 'cordova',
+            ico: 'https://cordova.apache.org/favicon.ico',
+            url: 'https://cordova.apache.ac.cn/',
+            description: '使用HTML、CSS 和JS 构建移动应用,使用一个代码库 针对多个平台,免费且开源'
+        },
     ],
     documentation: [
         {
@@ -418,6 +425,41 @@ export const data = {
             ico: 'https://zh.z-lib.gs/favicon.svg',
             url: 'https://zh.z-lib.gs/',
             description: '可以浏览和下载各种书籍'
+        },
+        {
+            id: 4,
+            name: 'DOTOWN',
+            ico: 'https://dotown.maeda-design-room.net/wp-content/uploads/2022/01/favicon.png',
+            url: 'https://dotown.maeda-design-room.net/',
+            description: '一些超好看的像素素材'
+        },
+        {
+            id: 5,
+            name: 'kenney',
+            ico: 'https://kenney.nl/favicon.ico',
+            url: 'https://kenney.nl/',
+            description: '数以千计的完全免费的游戏资产供您使用。'
+        },
+        {
+            id: 6,
+            name: 'CraftPix.Net',
+            ico: 'https://craftpix.net/favicon/favicon.ico',
+            url: 'https://craftpix.net/',
+            description: '2D游戏资产商店&免费'
+        },
+        {
+            id: 7,
+            name: 'ambientCG',
+            ico: 'https://acg-media.struffelproductions.com/file/ambientCG-Web/media/icon/favicon.ico',
+            url: 'https://ambientcg.com/',
+            description: '有很多纹理素材'
+        },
+        {
+            id: 8,
+            name: 'AssetStore',
+            ico: 'https://assetstore.unity.com/favicon.ico',
+            url: 'https://assetstore.unity.com/zh-CN',
+            description: 'Unity的素材商店市场'
         }
     ],
     design: [
@@ -604,6 +646,13 @@ export const data = {
             ico: 'https://winrobot-pub-a-oss.winrobot360.com/static/home/favicon.ico',
             url: 'https://www.yingdao.com/',
             description: '我们创造软件机器人，让人不需要像机器一样工作'
+        },
+        {
+            id: 19,
+            name: '91化简',
+            ico: 'https://91huajian.cn/favicon.ico',
+            url: 'https://91huajian.cn/',
+            description: '一款开源的，免费的简历设计制作神器'
         }
     ],
     AI: [
@@ -641,6 +690,13 @@ export const data = {
             ico: 'https://xinghuo.xfyun.cn/spark-icon.ico',
             url: 'https://xinghuo.xfyun.cn/',
             description: '科大讯飞推出的AI大模型，支持对话、写作、编程等功能，还能提供语音交互方式'
+        },
+        {
+            id: 6,
+            name: 'AI Filter',
+            ico: 'https://aifilter.net/static/images/common/favicon.ico',
+            url: 'https://aifilter.net/',
+            description: '使用 AI 滤镜将您的照片转换为动漫、粘土、3D、像素、表情符号、PS2、贴纸和更多样式。非常适合初学者和专业人士，只需点击几下即可。'
         }
     ],
     cloudPlatform: [
@@ -734,6 +790,13 @@ export const data = {
             ico: 'https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico',
             url: 'https://codepen.io/',
             description: 'CodePen 是面向前端设计人员和开发人员的社交开发环境。构建和部署网站，展示您的作品，构建测试用例以学习和调试，并寻找灵感。'
+        },
+        {
+            id: 14,
+            name: 'GitCode',
+            ico: 'https://cdn-static.gitcode.com/static/images/logo-favicon.png',
+            url: 'https://gitcode.com/',
+            description: '代码仓库'
         }
     ],
     networkSecurity: [
@@ -780,6 +843,13 @@ export const data = {
             ico: 'https://developer.hubing.online/favicon.png',
             url: 'https://developer.hubing.online',
             description: '各种大佬的项目'
+        },
+        {
+            id: 5,
+            name: 'roadmap',
+            ico: 'https://roadmap.sh/manifest/favicon.ico',
+            url: 'https://roadmap.sh/',
+            description: 'roadmap.sh 是社区努力的结果 创建路线图、指南和其他教育内容以帮助指导开发人员 在选择一条道路并指导他们的学习。'
         }
     ],
     games: [

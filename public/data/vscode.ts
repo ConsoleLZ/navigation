@@ -52,5 +52,5 @@ export const data = [
         name: "Color Highlight",
         des: "在编辑器中突出显示 Web 颜色",
         img: "/images/vscode/color-highlight.jpg"
-    }
+    },
 ]

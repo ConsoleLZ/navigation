@@ -10,7 +10,9 @@
                 <div class="tooltip" :data-tip="item.name">
                     <p class="name">{{ item.name }}</p>
                 </div>
-                <div>{{ item.des }}</div>
+                <div class="tooltip" :data-tip="item.des">
+                    <p class="des">{{ item.des }}</p>
+                </div>
             </div>
         </div>
     </div>

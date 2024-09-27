@@ -18,8 +18,13 @@ export const routerConfig:roterModel[] = [
     },
     {
         url: '/vscode',
-        name: 'vscode推荐插件',
+        name: 'vscode插件',
         icon: '/images/navbar/vscode.svg'
+    },
+    {
+        url: '/addon',
+        name: '浏览器插件',
+        icon: '/images/navbar/addon.svg'
     },
     {
         url: '/h5Games',

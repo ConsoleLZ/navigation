@@ -1,6 +1,6 @@
 <template>
+  <Navbar></Navbar>
   <div class="app">
-    <navbar />
     <div class="main">
       <div class="sidebar">
         <a href="#aboutFrontEnd">关于前端</a>

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {data} from '~/public/data/project'
+import { data } from '~/public/data/project'
 
 const onJumpPage = (url: string) => {
   window.open(url)
@@ -7,8 +7,8 @@ const onJumpPage = (url: string) => {
 </script>
 
 <template>
+  <Navbar></Navbar>
   <div class="app">
-    <Navbar></Navbar>
     <div class="main">
       <div class="card bg-base-100 image-full shadow-xl" v-for="item in data" :key="item.id">
         <figure>

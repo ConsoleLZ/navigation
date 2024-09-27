@@ -38,7 +38,7 @@
     width: 97%;
     height: 100%;
     padding-left: 120px;
-    padding-top: 50px;
+    padding-top: 30px;
     padding-bottom: 20px;
     box-sizing: border-box;
     overflow: hidden;
@@ -67,7 +67,7 @@
     width: 100%;
     background-color: white;
     border-radius: 4px;
-    padding: 50px 40px;
+    padding: 20px 30px;
     box-sizing: border-box;
   }
   
