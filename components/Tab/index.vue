@@ -153,6 +153,10 @@ data7.value = data.script
     grid-gap: 10px;
 }
 
+.box-flex > div {
+    max-width: 450px;
+}
+
 @media screen and (max-width: 950px) {
     .box-flex {
         grid-template-columns: repeat(2, 1fr);

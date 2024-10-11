@@ -53,4 +53,10 @@ export const data = [
         des: "在编辑器中突出显示 Web 颜色",
         img: "/images/vscode/color-highlight.jpg"
     },
+    {
+        id: 10,
+        name: "Batch Runner",
+        des: "在 VS Code 终端中运行批处理文件",
+        img: "/images/vscode/batch-runner.jpg"
+    },
 ]

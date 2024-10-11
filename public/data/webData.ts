@@ -210,6 +210,13 @@ export const data = {
             url: 'https://cordova.apache.ac.cn/',
             description: '使用HTML、CSS 和JS 构建移动应用,使用一个代码库 针对多个平台,免费且开源'
         },
+        {
+            id: 34,
+            name: 'Lottie',
+            ico: 'https://airbnb.io/favicon.ico',
+            url: 'https://airbnb.io/lottie/#/',
+            description: 'ottie 是一个适用于 Android、iOS、Web 和 Windows 的库，它使用 Bodymovin 解析导出为 JSON 的 Adobe After Effects 动画，并在移动设备和 Web 上本地呈现它们！'
+        },
     ],
     documentation: [
         {
@@ -330,6 +337,13 @@ export const data = {
             ico: 'https://www.w3school.com.cn/ui2019/logo-32-red.png',
             url: 'https://www.w3school.com.cn/',
             description: '领先的 Web 技术教程 - 全部免费'
+        },
+        {
+            id: 18,
+            name: 'phaser',
+            ico: 'https://phaser.io/favicon.ico',
+            url: 'https://phaser.io/',
+            description: 'Javascript 游戏框架'
         }
     ],
     UIFramework: [
@@ -460,6 +474,13 @@ export const data = {
             ico: 'https://assetstore.unity.com/favicon.ico',
             url: 'https://assetstore.unity.com/zh-CN',
             description: 'Unity的素材商店市场'
+        },
+        {
+            id: 9,
+            name: 'vectorCraftr',
+            ico: 'https://vectorcraftr.com/images/icons/favicon.ico',
+            url: 'https://vectorcraftr.com/',
+            description: '一些好看的插画'
         }
     ],
     design: [
@@ -697,6 +718,13 @@ export const data = {
             ico: 'https://aifilter.net/static/images/common/favicon.ico',
             url: 'https://aifilter.net/',
             description: '使用 AI 滤镜将您的照片转换为动漫、粘土、3D、像素、表情符号、PS2、贴纸和更多样式。非常适合初学者和专业人士，只需点击几下即可。'
+        },
+        {
+            id: 7,
+            name: 'chatnio',
+            ico: 'https://chatnio.net/favicon.ico',
+            url: 'https://chatnio.net/',
+            description: '一个各种ai模型集合的网站'
         }
     ],
     cloudPlatform: [

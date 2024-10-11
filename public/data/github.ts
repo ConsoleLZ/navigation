@@ -111,6 +111,13 @@ export const data = {
             url: 'https://github.com/lodash/lodash',
             description: '一个现代化的JavaScript实用库，提供模块化、性能和额外功能。',
             language: 'JavaScript'
+        },
+        {
+            id: 17,
+            name: 'mattboldt / typed.js',
+            url: 'https://github.com/mattboldt/typed.js',
+            description: 'JavaScript 打字动画库',
+            language: 'JavaScript'
         }
     ],
     template: [
@@ -241,6 +248,13 @@ export const data = {
             url: 'https://github.com/1c7/chinese-independent-developer',
             description: '👩🏿‍💻👨🏾‍💻👩🏼‍💻👨🏽‍💻👩🏻‍💻中国独立开发者项目列表 -- 分享大家都在做什么',
             language: '无'
+        },
+        {
+            id: 13,
+            name: 'phaserjs / examples',
+            url: 'https://github.com/phaserjs/examples',
+            description: 'Phaser 3 例子',
+            language: 'JavaScript'
         }
     ],
     ai: [
