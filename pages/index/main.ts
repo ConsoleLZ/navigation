@@ -68,8 +68,8 @@ export default defineComponent({
                 })
             },
             // 跳转到我的博客
-            onJumpBlog() {
-                window.open('https://consolelz.github.io/')
+            onJumpPage(url: string) {
+                window.open(url)
             }
         }
 

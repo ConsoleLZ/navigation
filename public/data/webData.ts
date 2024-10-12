@@ -825,6 +825,13 @@ export const data = {
             ico: 'https://cdn-static.gitcode.com/static/images/logo-favicon.png',
             url: 'https://gitcode.com/',
             description: '代码仓库'
+        },
+        {
+            id: 15,
+            name: 'Biofy',
+            ico: 'https://biofy.cn/favicon.ico',
+            url: 'https://biofy.cn/',
+            description: '拼接、聚合你的多元化世界'
         }
     ],
     networkSecurity: [
