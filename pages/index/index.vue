@@ -172,7 +172,7 @@
         <button class="btn btn-link btn-sm" @click="onJumpPage('https://consolelz.github.io/')">https://consolelz.github.io/</button>
       </div>
       <div class="abinfo_item">
-        <span>我的多元化世界:</span>
+        <span>多元化</span>
         <button class="btn btn-link btn-sm" @click="onJumpPage('https://biofy.cn/consoleLZ')">https://biofy.cn/consoleLZ</button>
       </div>
       <div class="abinfo_item">
