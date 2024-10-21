@@ -1,6 +1,6 @@
 <template>
     <div class="grid">
-        <div class="grid-item" v-for="item in dataList" :key="item.id">
+        <div class="grid-item" @click="onJump(item.url)" v-for="item in dataList" :key="item.id">
             <div class="avatar">
                 <div class="w-24 rounded-full">
                     <img :src="item.img" />

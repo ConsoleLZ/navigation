@@ -8,5 +8,16 @@ export default defineComponent({
             type: Array as PropType<DataModel[]>,
             default: ()=>[]
         }
+    },
+    setup(){
+        const methods = {
+            onJump(url:string){
+                window.open(url)
+            }
+        }
+
+        return {
+            ...methods
+        }
     }
 })

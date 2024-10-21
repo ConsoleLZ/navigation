@@ -1,7 +1,12 @@
 <script setup lang="ts">
 import { routerConfig } from '~/public/config'
 import { type roterModel } from '~/types/router'
-import { data } from '~/public/data/webData';
+import { data as webData } from '~/public/data/webData';
+import { data as githubData } from '~/public/data/github';
+import { data as vscodeData } from '~/public/data/vscode';
+import { data as addonData } from '~/public/data/addon';
+import { data as h5GamesData } from '~/public/data/h5Games';
+import { data as projectData } from '~/public/data/project';
 import MiniSearch from 'minisearch'
 
 const rConfig: roterModel[] = routerConfig
@@ -25,6 +30,79 @@ function debounce(func: any, delay: number) {
     }, delay);
   };
 }
+
+let webDocuments: any
+let githubDocuments: any
+let vscodeDocuments: any
+let addonDocuments: any
+let h5GamesDocuments: any
+let projectDocuments: any
+
+if (import.meta.client) {
+  let id: number = 1
+  switch (true) {
+    case location.href.includes('github'):
+      githubDocuments = Object.values(githubData).flat().map(item => {
+        return {
+          name: item.name,
+          description: item.description,
+          url: item.url,
+          id: id++
+        }
+      })
+      break;
+    case location.href.includes('vscode'):
+      vscodeDocuments = Object.values(vscodeData).flat().map(item => {
+        return {
+          name: item.name,
+          description: item.des,
+          url: item.url,
+          id: id++
+        }
+      })
+      break;
+    case location.href.includes('addon'):
+      addonDocuments = Object.values(addonData).flat().map(item => {
+        return {
+          name: item.name,
+          description: item.des,
+          url: item.url,
+          id: id++
+        }
+      })
+      break;
+    case location.href.includes('h5Games'):
+      h5GamesDocuments = Object.values(h5GamesData).flat().map(item => {
+        return {
+          name: item.name,
+          description: item.description,
+          url: item.url,
+          id: id++
+        }
+      })
+      break;
+    case location.href.includes('project'):
+      projectDocuments = Object.values(projectData).flat().map(item => {
+        return {
+          name: item.name,
+          description: item.description,
+          url: item.ckURL,
+          id: id++
+        }
+      })
+      break;
+    default:
+      webDocuments = Object.values(webData).flat().map(item => {
+        return {
+          name: item.name,
+          description: item.description,
+          url: item.url,
+          id: id++
+        }
+      })
+  }
+}
+
 // 搜索
 const onSearch = debounce(function () {
   searchData.value = []
@@ -34,16 +112,26 @@ const onSearch = debounce(function () {
     storeFields: ['name', 'description', 'url'] // fields to return with search results
   })
 
-  let id: number = 1
-  const documents = Object.values(data).flat().map(item => {
-    return {
-      name: item.name,
-      description: item.description,
-      url: item.url,
-      id: id++
-    }
-  })
-  miniSearch.addAll(documents)
+  switch (true) {
+    case location.href.includes('github'):
+      miniSearch.addAll(githubDocuments);
+      break;
+    case location.href.includes('vscode'):
+      miniSearch.addAll(vscodeDocuments);
+      break;
+    case location.href.includes('addon'):
+      miniSearch.addAll(addonDocuments);
+      break;
+    case location.href.includes('h5Games'):
+      miniSearch.addAll(h5GamesDocuments);
+      break;
+    case location.href.includes('project'):
+      miniSearch.addAll(projectDocuments);
+      break;
+    default:
+      miniSearch.addAll(webDocuments)
+  }
+
   miniSearch.autoSuggest(searchInput.value, {
     filter: (result) => {
       searchData.value.push({
@@ -55,25 +143,31 @@ const onSearch = debounce(function () {
     }
   })
 }, 500); // 延迟时间为 300 毫秒
+
+// 搜索框失去焦点
+const onSearchBlur = (e: any) => {
+  setTimeout(() => {
+    searchData.value = []
+  }, 150)
+}
 </script>
 
 <template>
   <div class="navbar bg-base-100">
-    <div class="w-8 rounded-full">
-      <img alt="logo" src="/favicon.svg" />
-    </div>
+    <img width="28px" alt="logo" src="/favicon.svg" />
     <div class="flex-1">
       <a class="btn btn-ghost text-xl" @click="changePage('/')">WV</a>
     </div>
     <label class="input input-bordered flex items-center gap-2">
-      <input @input="onSearch" id="searchInput" type="text" class="grow" placeholder="搜索" />
+      <input @focusout="onSearchBlur" @input="onSearch" id="searchInput" type="text" class="grow" placeholder="搜索" />
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="h-4 w-4 opacity-70">
         <path fill-rule="evenodd"
           d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
           clip-rule="evenodd" />
       </svg>
       <div class="alertSearch" v-show="searchData.length">
-        <div style="width: 100%;cursor: pointer;margin-bottom: 10px" v-for="item in searchData" :key="item.url" @click="onJump(item.url)">
+        <div style="width: 100%;cursor: pointer;margin-bottom: 10px" v-for="item in searchData" :key="item.url"
+          @click="onJump(item.url)">
           <div>{{ item.name }}</div>
           <div class="des">
             {{ item.description }}
@@ -100,7 +194,7 @@ const onSearch = debounce(function () {
 }
 
 .nav {
-  width: 65%;
+  width: 805px;
   overflow: auto;
   margin-left: 20px;
   padding: 10px;
@@ -114,14 +208,14 @@ const onSearch = debounce(function () {
   cursor: pointer;
 }
 
-.nav-item > div {
+.nav-item>div {
   transition: all 300ms;
   white-space: nowrap;
-  font-size: 13px;
+  font-size: 14px;
 }
 
-.nav-item > div:hover {
-  color: skyblue;
+.nav-item>div:hover {
+  color: rgb(38, 29, 170);
 }
 
 .input {

@@ -165,6 +165,12 @@ data7.value = data.script
     }
 }
 
+@media screen and (max-width: 410px) {
+    .card {
+        width: 80% !important;
+    }
+}
+
 .tab:is(input[type="radio"]):after {
     white-space: nowrap;
 }

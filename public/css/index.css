@@ -5,8 +5,7 @@
     padding: 0;
 }
 
-html,
-body {
+html,body {
     scroll-behavior: smooth;
     font-family: Noto Sans SC;
     background-color: #f3f3f3;

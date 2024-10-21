@@ -3,4 +3,5 @@ export interface DataModel {
     name: string
     des: string
     img: string
+    url: string
 }
