@@ -9,6 +9,7 @@ import { data as h5GamesData } from '~/public/data/h5Games';
 import { data as projectData } from '~/public/data/project';
 import MiniSearch from 'minisearch'
 
+
 const rConfig: roterModel[] = routerConfig
 const searchData = ref<any>([])
 const changePage = (url: string) => {
@@ -103,13 +104,38 @@ if (import.meta.client) {
   }
 }
 
+const tokenizer = (str) => {
+  // 分词逻辑，返回完整的单词以及单词的部分片段
+  const words = str.match(/[\u4e00-\u9fa5]+|[a-zA-Z0-9]+/g) || [];
+  const subStrings = [];
+
+  words.forEach(word => {
+    if (/^[a-zA-Z0-9]+$/.test(word)) { // 英文或数字
+      // 生成所有可能的子串
+      for (let i = 1; i <= word.length; i++) {
+        subStrings.push(...word.slice(0, i));
+      }
+    } else { // 中文
+      // 生成所有可能的 n-gram 子串
+      for (let i = 1; i <= word.length; i++) {
+        for (let j = 0; j <= word.length - i; j++) {
+          subStrings.push(word.substring(j, j + i));
+        }
+      }
+    }
+  });
+
+  return subStrings.filter((value, index, self) => self.indexOf(value) === index); // 去重
+};
+
 // 搜索
 const onSearch = debounce(function () {
   searchData.value = []
   const searchInput: any = document.getElementById('searchInput')
   let miniSearch = new MiniSearch({
     fields: ['name', 'description'], // fields to index for full-text search
-    storeFields: ['name', 'description', 'url'] // fields to return with search results
+    storeFields: ['name', 'description', 'url'], // fields to return with search results
+    tokenize: tokenizer
   })
 
   switch (true) {
@@ -142,7 +168,7 @@ const onSearch = debounce(function () {
       return true
     }
   })
-}, 500); // 延迟时间为 300 毫秒
+}, 500);
 
 // 搜索框失去焦点
 const onSearchBlur = (e: any) => {
