@@ -20,4 +20,9 @@ export interface StateModel {
     study: webData[],
     games: webData[],
     other: webData[]
+    webStatistics: number | null
+    githubStatistics: number | null
+    vscodeStatistics: number | null
+    addonStatistics: number | null
+    h5GamesDataStatistics: number | null
 }

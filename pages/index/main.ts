@@ -1,7 +1,12 @@
 import { defineComponent, reactive, watch, nextTick } from 'vue'
 import { type StateModel } from './types'
 import Navbar from "~/components/Navbar/index.vue";
-import { data } from '~/public/data/webData';
+import { data as webData } from '~/public/data/webData';
+import { data as githubData } from '~/public/data/github';
+import { data as vscodeData } from '~/public/data/vscode';
+import { data as addonData } from '~/public/data/addon';
+import { data as h5GamesData } from '~/public/data/h5Games';
+import {sumOfArrayLengths} from '~/utils/index'
 
 export default defineComponent({
     components: {
@@ -21,7 +26,12 @@ export default defineComponent({
             networkSecurity: [],
             study: [],
             games: [],
-            other: []
+            other: [],
+            webStatistics: null,
+            githubStatistics: null,
+            vscodeStatistics: null,
+            addonStatistics: null,
+            h5GamesDataStatistics: null,
         })
 
         if (import.meta.client) {
@@ -67,17 +77,25 @@ export default defineComponent({
                     })
                 })
             },
+            // 获取统计信息
+            getInfo(){
+                state.webStatistics = sumOfArrayLengths(webData)
+                state.githubStatistics = sumOfArrayLengths(githubData)
+                state.vscodeStatistics = vscodeData.length
+                state.addonStatistics = addonData.length
+                state.h5GamesDataStatistics = addonData.length
+            },
             // 跳转到我的博客
             onJumpPage(url: string) {
                 window.open(url)
             }
         }
-
+        methods.getInfo()
         // 记录当前是哪个元素进入视口
         let viewDom: string = ''
         // 存储目前有哪些元素已经进入了视口
         const viewList:string[] = []
-        const dataList: any = data
+        const dataList: any = webData
         onMounted(() => {
             // 关于前端
             const dom: HTMLElement[] = [

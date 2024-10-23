@@ -104,12 +104,12 @@ if (import.meta.client) {
   }
 }
 
-const tokenizer = (str) => {
+const tokenizer = (str:any) => {
   // 分词逻辑，返回完整的单词以及单词的部分片段
   const words = str.match(/[\u4e00-\u9fa5]+|[a-zA-Z0-9]+/g) || [];
-  const subStrings = [];
+  const subStrings:any = [];
 
-  words.forEach(word => {
+  words.forEach((word:any) => {
     if (/^[a-zA-Z0-9]+$/.test(word)) { // 英文或数字
       // 生成所有可能的子串
       for (let i = 1; i <= word.length; i++) {
@@ -125,7 +125,7 @@ const tokenizer = (str) => {
     }
   });
 
-  return subStrings.filter((value, index, self) => self.indexOf(value) === index); // 去重
+  return subStrings.filter((value:any, index:any, self:any) => self.indexOf(value) === index); // 去重
 };
 
 // 搜索

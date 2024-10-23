@@ -156,10 +156,6 @@
         <img src="https://nuxt.com.cn/icon.png" alt="nuxt框架">
         <span>nuxt框架</span>
       </a>
-      <a href="https://ziyuan.baidu.com/dailysubmit/index" target="_blank">
-        <img src="https://ziyuan.baidu.com/favicon.ico" alt="百度收录">
-        <span>百度收录</span>
-      </a>
     </div>
     <div class="abInfo">
       <div class="title">个人信息</div>
@@ -186,7 +182,12 @@
     </div>
     <div class="staWeb">
       <div class="title">站点信息</div>
-      <div>本站已经运行:<span style="margin-left: 5px;" class="badge badge-primary badge-outline">{{ webTime }}</span></div>
+      <div>本站已经运行:<span style="margin-left: 5px;" class="badge badge-primary">{{ webTime }}</span></div>
+      <div>本站收录的网站数量:<span style="margin-left: 5px;">{{ webStatistics }}</span></div>
+      <div>本站收录的github项目数量:<span style="margin-left: 5px;">{{ githubStatistics }}</span></div>
+      <div>本站收录的vscode插件数量:<span style="margin-left: 5px;">{{ vscodeStatistics }}</span></div>
+      <div>本站收录的浏览器插件数量:<span style="margin-left: 5px;">{{ addonStatistics }}</span></div>
+      <div>本站收录的h5小游戏的数量:<span style="margin-left: 5px;">{{ h5GamesDataStatistics }}</span></div>
     </div>
   </footer>
 </template>
