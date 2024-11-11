@@ -8,7 +8,7 @@ export const routerConfig:roterModel[] = [
     },
     {
         url: '/github',
-        name: 'github爆火项目',
+        name: '优秀项目',
         icon: '/images/navbar/github.svg'
     },
     {

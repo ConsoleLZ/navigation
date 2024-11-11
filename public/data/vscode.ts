@@ -69,4 +69,18 @@ export const data = [
         img: "/images/vscode/batch-runner.jpg",
         url: "https://marketplace.visualstudio.com/items?itemName=NilsSoderman.batch-runner"
     },
+    {
+        id: 11,
+        name: "Project Manager",
+        des: "在项目之间轻松切换",
+        img: "/images/vscode/project-manager.png",
+        url: "https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager"
+    },
+    {
+        id: 12,
+        name: "Prettier - Code formatter",
+        des: "使用 prettier 的代码格式化程序",
+        img: "/images/vscode/prettier.jpg",
+        url: "https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode"
+    },
 ]

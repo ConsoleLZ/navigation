@@ -674,6 +674,13 @@ export const data = {
             ico: 'https://91huajian.cn/favicon.ico',
             url: 'https://91huajian.cn/',
             description: '一款开源的，免费的简历设计制作神器'
+        },
+        {
+            id: 20,
+            name: '云搭',
+            ico: 'https://www.sunmao-design.top/sunmao/admin/assets/logo.896aa176.png',
+            url: 'https://www.sunmao-design.top/sunmao/admin/#/dooring/home',
+            description: '零代码搭建小程序、H5、问卷、图文'
         }
     ],
     AI: [
@@ -725,6 +732,27 @@ export const data = {
             ico: 'https://chatnio.net/favicon.ico',
             url: 'https://chatnio.net/',
             description: '一个各种ai模型集合的网站'
+        },
+        {
+            id: 8,
+            name: 'TRIPO',
+            ico: 'https://www.tripo3d.ai/v1/favicon.png',
+            url: 'https://www.tripo3d.ai/',
+            description: 'ai生成3D模型'
+        },
+        {
+            id: 9,
+            name: 'aifacefy',
+            ico: 'https://aifacefy.com/icon.svg?d4bc701fa93cbc90',
+            url: 'https://aifacefy.com/',
+            description: '免费 AI 换脸'
+        },
+        {
+            id: 10,
+            name: 'GoEnance',
+            ico: 'https://cdn.goenhance.ai/images/static/sites/goenhance-logo-drak-200.png',
+            url: 'https://www.goenhance.ai/',
+            description: '在几分钟内创建 AI 动画短片'
         }
     ],
     cloudPlatform: [
@@ -885,6 +913,20 @@ export const data = {
             ico: 'https://roadmap.sh/manifest/favicon.ico',
             url: 'https://roadmap.sh/',
             description: 'roadmap.sh 是社区努力的结果 创建路线图、指南和其他教育内容以帮助指导开发人员 在选择一条道路并指导他们的学习。'
+        },
+        {
+            id: 6,
+            name: 'ProjectHunt',
+            ico: 'https://projecthunt.me/favicon.ico',
+            url: 'https://projecthunt.me/',
+            description: '发现和分享出色的项目'
+        },
+        {
+            id: 7,
+            name: '思否',
+            ico: 'https://static.segmentfault.com/main_site_next/dc3490f3/favicon.ico',
+            url: 'https://segmentfault.com/',
+            description: '技术分享'
         }
     ],
     games: [

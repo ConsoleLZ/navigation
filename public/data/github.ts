@@ -118,6 +118,34 @@ export const data = {
             url: 'https://github.com/mattboldt/typed.js',
             description: 'JavaScript 打字动画库',
             language: 'JavaScript'
+        },
+        {
+            id: 18,
+            name: 'saucxs / captcha-mini',
+            url: 'https://github.com/saucxs/captcha-mini',
+            description: 'captcha-mini.js是一个生成验证码的插件，使用js和canvas生成的，确保后端服务被暴力攻击，简单判断人机以及系统的安全性，体积小，功能多，支持配置',
+            language: 'JavaScript'
+        },
+        {
+            id: 19,
+            name: 'wangeditor-team / wangEditor',
+            url: 'https://github.com/wangeditor-team/wangEditor',
+            description: '开源 Web 富文本编辑器',
+            language: 'TypeScript'
+        },
+        {
+            id: 20,
+            name: 'megasanjay / vue3-marquee',
+            url: 'https://github.com/megasanjay/vue3-marquee',
+            description: '一个简单的跑马灯组件，对 Vue 3 的依赖为零。',
+            language: 'Vue'
+        },
+        {
+            id: 21,
+            name: 'modood / Administrative-divisions-of-China',
+            url: 'https://github.com/modood/Administrative-divisions-of-China',
+            description: '中华人民共和国行政区划：省级（省份）、 地级（城市）、 县级（区县）、 乡级（乡镇街道）、 村级（村委会居委会） ，中国省市区镇村二级三级四级五级联动地址数据。',
+            language: 'JavaScript'
         }
     ],
     template: [
@@ -162,6 +190,13 @@ export const data = {
             url: 'https://github.com/koodo-reader/koodo-reader',
             description: '现代电子书管理器和阅读器，具有适用于 Windows、macOS、Linux 和 Web 的同步和备份功能',
             language: 'JavaScript'
+        },
+        {
+            id: 7,
+            name: 'steve / gallery',
+            url: 'https://gitee.com/steve007/gallery',
+            description: '数字展馆',
+            language: 'TypeScript'
         }
     ],
     study: [
@@ -317,6 +352,13 @@ export const data = {
             url: 'https://github.com/alievk/avatarify-python',
             description: '适用于 Zoom、Skype 和其他视频会议应用程序的头像。',
             language: 'Python'
+        },
+        {
+            id: 6,
+            name: 'bb-music / flutter-app',
+            url: 'https://github.com/bb-music/flutter-app',
+            description: '使用 flutter 编写的哔哔音乐客户端，无需登录，没有信息收集，实现你的听歌自由。',
+            language: 'Dart'
         }
     ],
     other: [
