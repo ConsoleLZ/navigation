@@ -681,6 +681,13 @@ export const data = {
             ico: 'https://www.sunmao-design.top/sunmao/admin/assets/logo.896aa176.png',
             url: 'https://www.sunmao-design.top/sunmao/admin/#/dooring/home',
             description: '零代码搭建小程序、H5、问卷、图文'
+        },
+        {
+            id: 21,
+            name: 'JSON CRACK',
+            ico: 'https://jsoncrack.com/favicon.ico',
+            url: 'https://jsoncrack.com/',
+            description: '将 JSON 可视化为交互式图形'
         }
     ],
     AI: [

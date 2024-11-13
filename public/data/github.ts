@@ -146,6 +146,13 @@ export const data = {
             url: 'https://github.com/modood/Administrative-divisions-of-China',
             description: '中华人民共和国行政区划：省级（省份）、 地级（城市）、 县级（区县）、 乡级（乡镇街道）、 村级（村委会居委会） ，中国省市区镇村二级三级四级五级联动地址数据。',
             language: 'JavaScript'
+        },
+        {
+            id: 22,
+            name: 'highlightjs / highlight.js',
+            url: 'https://github.com/highlightjs/highlight.js',
+            description: 'JavaScript 语法高亮显示器，具有语言自动检测和零依赖关系。',
+            language: 'JavaScript'
         }
     ],
     template: [
@@ -197,6 +204,13 @@ export const data = {
             url: 'https://gitee.com/steve007/gallery',
             description: '数字展馆',
             language: 'TypeScript'
+        },
+        {
+            id: 8,
+            name: 'guchengwuyue / yshop-drink意象桌面扫码点餐系统',
+            url: 'https://gitee.com/guchengwuyue/yshop-drink',
+            description: 'yshop意象点餐(扫码点餐)系统，在线点餐(外卖与自取)小程序模式，支持多门店模式，SaaS多租户模式，基础技术springboot3+jdk17+vue3+uniapp(vue3) 采用当前流行技术组合的前后端分离点餐系统： SpringBoot3、Spring Security OAuth2、MybatisPlus、SpringSecurity、jwt、redis、Vue3的前后端分离的系统',
+            language: 'Java'
         }
     ],
     study: [
