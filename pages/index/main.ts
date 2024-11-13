@@ -83,7 +83,7 @@ export default defineComponent({
                 state.githubStatistics = sumOfArrayLengths(githubData)
                 state.vscodeStatistics = vscodeData.length
                 state.addonStatistics = addonData.length
-                state.h5GamesDataStatistics = addonData.length
+                state.h5GamesDataStatistics = h5GamesData.length
             },
             // 跳转到我的博客
             onJumpPage(url: string) {
