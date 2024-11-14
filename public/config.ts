@@ -27,6 +27,11 @@ export const routerConfig:roterModel[] = [
         icon: '/images/navbar/addon.svg'
     },
     {
+        url: '/blender',
+        name: 'blender插件',
+        icon: '/images/navbar/blender.svg'
+    },
+    {
         url: '/h5Games',
         name: 'h5小游戏',
         icon: '/images/navbar/games.svg'
