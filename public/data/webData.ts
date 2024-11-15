@@ -688,6 +688,13 @@ export const data = {
             ico: 'https://jsoncrack.com/favicon.ico',
             url: 'https://jsoncrack.com/',
             description: '将 JSON 可视化为交互式图形'
+        },
+        {
+            id: 22,
+            name: 'GIF中文网',
+            ico: 'https://www.gif.cn/favicon.ico',
+            url: 'https://www.gif.cn/',
+            description: 'GIF图片制作，视频转GIF，GIF图片素材'
         }
     ],
     AI: [

@@ -83,4 +83,11 @@ export const data = [
         img: "/images/vscode/prettier.jpg",
         url: "https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode"
     },
+    {
+        id: 13,
+        name: "background",
+        des: "将背景图像引入 vscode",
+        img: "/images/vscode/background.png",
+        url: "https://marketplace.visualstudio.com/items?itemName=shalldie.background"
+    },
 ]

@@ -153,6 +153,13 @@ export const data = {
             url: 'https://github.com/highlightjs/highlight.js',
             description: 'JavaScript 语法高亮显示器，具有语言自动检测和零依赖关系。',
             language: 'JavaScript'
+        },
+        {
+            id: 23,
+            name: 'sindresorhus / github-markdown-css',
+            url: 'https://github.com/sindresorhus/github-markdown-css',
+            description: '复制 GitHub Markdown 样式的最小 CSS 数量',
+            language: 'CSS'
         }
     ],
     template: [

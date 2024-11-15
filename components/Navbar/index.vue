@@ -182,7 +182,7 @@ const onSearchBlur = (e: any) => {
   <div class="navbar bg-base-100">
     <img width="28px" alt="logo" src="/favicon.svg" />
     <div class="flex-1">
-      <a class="btn btn-ghost text-xl" @click="changePage('/')">WV</a>
+      <a class="btn btn-ghost text-xl" @click="changePage('/')">小哲的导航网站</a>
     </div>
     <label class="input input-bordered flex items-center gap-2">
       <input @focusout="onSearchBlur" @input="onSearch" id="searchInput" type="text" class="grow" placeholder="搜索" />
