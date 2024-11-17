@@ -6,6 +6,7 @@ import { data as githubData } from '~/public/data/github';
 import { data as vscodeData } from '~/public/data/vscode';
 import { data as addonData } from '~/public/data/addon';
 import { data as h5GamesData } from '~/public/data/h5Games';
+import { data as blenderData } from '~/public/data/blender';
 import {sumOfArrayLengths} from '~/utils/index'
 
 export default defineComponent({
@@ -32,6 +33,7 @@ export default defineComponent({
             vscodeStatistics: null,
             addonStatistics: null,
             h5GamesDataStatistics: null,
+            blenderDataStatistics: null,
         })
 
         if (import.meta.client) {
@@ -84,6 +86,7 @@ export default defineComponent({
                 state.vscodeStatistics = vscodeData.length
                 state.addonStatistics = addonData.length
                 state.h5GamesDataStatistics = h5GamesData.length
+                state.blenderDataStatistics = blenderData.length
             },
             // 跳转到我的博客
             onJumpPage(url: string) {

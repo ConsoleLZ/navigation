@@ -25,4 +25,5 @@ export interface StateModel {
     vscodeStatistics: number | null
     addonStatistics: number | null
     h5GamesDataStatistics: number | null
+    blenderDataStatistics: number | null
 }

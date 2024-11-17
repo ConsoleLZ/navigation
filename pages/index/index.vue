@@ -187,6 +187,7 @@
       <div>本站收录的github项目数量:<span style="margin-left: 5px;">{{ githubStatistics }}</span></div>
       <div>本站收录的vscode插件数量:<span style="margin-left: 5px;">{{ vscodeStatistics }}</span></div>
       <div>本站收录的浏览器插件数量:<span style="margin-left: 5px;">{{ addonStatistics }}</span></div>
+      <div>本站收录的blender插件数量:<span style="margin-left: 5px;">{{ blenderDataStatistics }}</span></div>
       <div>本站收录的h5小游戏的数量:<span style="margin-left: 5px;">{{ h5GamesDataStatistics }}</span></div>
     </div>
   </footer>

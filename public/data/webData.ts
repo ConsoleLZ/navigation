@@ -481,6 +481,13 @@ export const data = {
             ico: 'https://vectorcraftr.com/images/icons/favicon.ico',
             url: 'https://vectorcraftr.com/',
             description: '一些好看的插画'
+        },
+        {
+            id: 10,
+            name: '爱给网',
+            ico: 'https://cdn-sqn.aigei.com/assets/site/img/icon/favicon.ico',
+            url: 'https://www.aigei.com/',
+            description: '音效,配乐,3d模型,游戏素材,影视后期,视频素材,免费下载,音乐,特效,模版'
         }
     ],
     design: [
@@ -1078,6 +1085,13 @@ export const data = {
             ico: 'https://www.mianshiya.com/favicon.ico',
             url: 'https://www.mianshiya.com/',
             description: '题库质量高，完善，一个很好的刷题网站'
+        },
+        {
+            id: 18,
+            name: 'OpenStreetMap',
+            ico: 'https://www.openstreetmap.org/assets/favicon-32x32-99b88fcadeef736889823c8a886b89d8cada9d4423a49a27de29bacc0a6bebd1.png',
+            url: 'https://www.openstreetmap.org/',
+            description: '提供城市OSM数据'
         }
     ]
 }
