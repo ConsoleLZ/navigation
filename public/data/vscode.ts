@@ -90,4 +90,11 @@ export const data = [
         img: "/images/vscode/background.png",
         url: "https://marketplace.visualstudio.com/items?itemName=shalldie.background"
     },
+    {
+        id: 14,
+        name: "jsdoc",
+        des: "为函数快速创建 JSDoc 样式的注释。",
+        img: "/images/vscode/jsdoc.png",
+        url: "https://marketplace.visualstudio.com/items?itemName=lllllllqw.jsdoc"
+    },
 ]

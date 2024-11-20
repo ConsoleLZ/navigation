@@ -160,6 +160,20 @@ export const data = {
             url: 'https://github.com/sindresorhus/github-markdown-css',
             description: '复制 GitHub Markdown 样式的最小 CSS 数量',
             language: 'CSS'
+        },
+        {
+            id: 24,
+            name: 'Eikanya / Live2d-model',
+            url: 'https://github.com/Eikanya/Live2d-model',
+            description: 'live2d模型收集',
+            language: 'Mathematica'
+        },
+        {
+            id: 25,
+            name: 'imuncle / live2d',
+            url: 'https://github.com/imuncle/live2d',
+            description: 'live2d模型收集+展示，可直接用于静态网站',
+            language: 'JavaScript'
         }
     ],
     template: [

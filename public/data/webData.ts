@@ -344,6 +344,20 @@ export const data = {
             ico: 'https://phaser.io/favicon.ico',
             url: 'https://phaser.io/',
             description: 'Javascript 游戏框架'
+        },
+        {
+            id: 19,
+            name: 'rollup.js',
+            ico: 'https://rollupjs.org/favicon.png',
+            url: 'https://rollupjs.org/',
+            description: '打包工具'
+        },
+        {
+            id: 20,
+            name: 'pinia',
+            ico: 'https://pinia.vuejs.org/logo.svg',
+            url: 'https://pinia.vuejs.org/zh/',
+            description: '符合直觉的 Vue.js 状态管理库'
         }
     ],
     UIFramework: [
@@ -1092,6 +1106,13 @@ export const data = {
             ico: 'https://www.openstreetmap.org/assets/favicon-32x32-99b88fcadeef736889823c8a886b89d8cada9d4423a49a27de29bacc0a6bebd1.png',
             url: 'https://www.openstreetmap.org/',
             description: '提供城市OSM数据'
+        },
+        {
+            id: 19,
+            name: 'live2d',
+            ico: 'https://www.live2d.com/wp-content/themes/cubism_new/assets/img/favicon.ico',
+            url: 'https://www.live2d.com/zh-CHS/',
+            description: '可以直接对原图进行加工，做出2D的立体表现'
         }
     ]
 }
